@@ -16,7 +16,6 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Description EN", name: "description_en", widget: "string"}
       - {label: "Description GR", name: "description_el", widget: "string"}
-      - {label: "Description GR", name: "description_el", widget: "string"}
       - {label: "Image Main", name: "image_main", widget: "image", required: false }
       - {label: "Image Thumb", name: "image_thumb", widget: "image", required: false }
       - {label: "Categories", name: "categories", widget: "list"}
