@@ -6,12 +6,25 @@ publish_mode: 'editorial_workflow'
 media_folder: 'assets/files'  # Media files will be stored in the repo under assets/files
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - name: settings
+    label: Settings
+    files:
+      - file: _data/settings.yml
+        label: All Items
+        name: settings_items
+        fields:
+          - label: Settings
+            name: settings_list
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Value, name: value, widget: string}
+  - name: "pages"
+    label: "Pages"
     files:
       - label: "Products"
         name: "products"
-        file: "_data/test.yml"
+        file: "_data/products.yml"
         fields:
           - label: Products
             name: products
@@ -23,4 +36,4 @@ collections:
               - {label: Description Greek, name: description_el, widget: string}
               - {label: Image, name: image_main, widget: image}
               - {label: Image Thumb, name: image_thumb, widget: image}
-              - {label: Categories, name: categories, widget: string}
+              - {label: Categories, name: categories, widget: list}
