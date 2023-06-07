@@ -3,6 +3,10 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
+collections:
+  products:
+    output: true
+
 include:
   - _redirects
 

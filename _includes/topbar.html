@@ -1,44 +1,55 @@
-<!-- START TOP BAR -->
-<div id="topbar">
+            <div id="topbar">
     <div class="container">
         <div class="row">
             <div class="span12">
                 <div id="topbar-left" class="hidden-phone">
-                    <div id="text-2" class="widget-1 widget-first widget widget_text">
+                    <div id="text-2"
+                         class="widget-1 widget-first widget widget_text">
                         <div class="textwidget">
-                            Τ: +30 2310 935176 | F: +30 2310 905132 | E:
-                            <a href="mailto:info@dnm.gr">info@dnm.gr</a>
+                            Τ: 2310 935176 |
+                            F: 2310 905132 |
+                            E: <a href="mailto:info@dnm.gr">info@dnm.gr</a>
                         </div>
                     </div>
                 </div>
                 <div id="topbar-right">
                     <div id="icl_lang_sel_widget-2"
                          class="widget-1 widget-first widget widget_icl_lang_sel_widget">
-                            <a href="/en/{{ page.url }}"
-                               class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en">
-                                <img
-                                    class="wpml-ls-flag iclflag"
-                                    src="/assets/images/flags/en.png"
-                                    alt="en" title="English">
-                                <span class="wpml-ls-native icl_lang_sel_native">
-                                    English
-                                </span>
-                            </a>
-                            &nbsp;&nbsp;
-                            <a href="/el/{{ page.url }}"
-                               class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-en">
-                                <img
-                                    class="wpml-ls-flag iclflag"
-                                    src="/assets/images/flags/el.png"
-                                    alt="el" title="Ελληνικα">
-                                <span class="wpml-ls-native icl_lang_sel_native">
-                                    Ελληνικα
-                                </span>
-                            </a>
+                        <div class="wpml-ls-sidebars-topbar-right wpml-ls wpml-ls-legacy-dropdown js-wpml-ls-legacy-dropdown"
+                             id="lang_sel">
+                            <ul>
+                                <li tabindex="0"
+                                    class="wpml-ls-slot-topbar-right wpml-ls-item wpml-ls-item-el wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-dropdown">
+                                    <a href="/el/{{ page.url }}"
+                                       class="js-wpml-ls-item-toggle wpml-ls-item-toggle lang_sel_sel icl-el">
+                                        <img class="wpml-ls-flag iclflag"
+                                             src="/assets/sitepress-multilingual-cms/res/flags/el.png"
+                                             alt="el"
+                                             title="Ελληνικα">
+                                        <span class="wpml-ls-native icl_lang_sel_native">
+                                                        Ελληνικα
+                                                    </span>
+                                    </a>
+
+                                    <ul class="wpml-ls-sub-menu">
+                                        <li class="icl-en wpml-ls-slot-topbar-right wpml-ls-item wpml-ls-item-en wpml-ls-last-item">
+                                            <a href="/en/{{ page.url }}">
+                                                <img class="wpml-ls-flag iclflag"
+                                                     src="/assets/sitepress-multilingual-cms/res/flags/en.png"
+                                                     alt="en"
+                                                     title="English">
+                                                <span class="wpml-ls-native icl_lang_sel_native">
+                                                                English
+                                                            </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- END TOP BAR -->

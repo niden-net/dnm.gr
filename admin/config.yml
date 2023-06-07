@@ -3,37 +3,33 @@ backend:
   branch: master
 
 publish_mode: 'editorial_workflow'
-media_folder: 'assets/files'  # Media files will be stored in the repo under assets/files
+media_folder: 'assets/img'  # Media files will be stored in the repo under assets/files
 
 collections:
-  - name: settings
-    label: Settings
-    files:
-      - file: _data/set.yml
-        label: All Items
-        name: settings_items
-        fields:
-          - label: Settings
-            name: settings_list
-            widget: list
-            fields:
-              - {label: Label, name: label, widget: string}
-              - {label: Value, name: value, widget: string}
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Products"
-        name: "products"
-        file: "_data/products.yml"
-        fields:
-          - label: Products
-            name: products
-            widget: list
-            fields:
-              - {label: English, name: en, widget: string}
-              - {label: Greek, name: el, widget: string}
-              - {label: Description English, name: description_en, widget: string}
-              - {label: Description Greek, name: description_el, widget: string}
-              - {label: Image, name: image_main, widget: image}
-              - {label: Image Thumb, name: image_thumb, widget: image}
-              - {label: Categories, name: categories, widget: list}
+  - name: products
+    label: Products
+    folder: _products
+    sort: name
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Description EN", name: "description_en", widget: "string"}
+      - {label: "Description GR", name: "description_el", widget: "string"}
+      - {label: "Description GR", name: "description_el", widget: "string"}
+      - {label: "Image Main", name: "image_main", widget: "image", required: false }
+      - {label: "Image Thumb", name: "image_thumb", widget: "image", required: false }
+      - {label: "Categories", name: "categories", widget: "list"}
+#  - name: setup
+#    label: Setup
+#    files:
+#      - file: _data/settings.yml
+#        label: All Items
+#        name: settings_items
+#        fields:
+#          - label: Settings
+#            name: settings_list
+#            widget: list
+#            fields:
+#              - {label: Label, name: label, widget: string}
+#              - {label: Value, name: value, widget: string}
