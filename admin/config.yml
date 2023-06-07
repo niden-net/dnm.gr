@@ -11,12 +11,13 @@ collections:
     folder: _products
     sort: name
     create: true
-    slug: "{{name}}"
+    identifier_field: name_en
+    slug: "{{name_en}}"
     fields:
-      - {label: "Name EN", name: "name_en", widget: "string"}
-      - {label: "Name GR", name: "name_el", widget: "string"}
-      - {label: "Description EN", name: "description_en", widget: "string"}
-      - {label: "Description GR", name: "description_el", widget: "string"}
+      - {label: "Name EN", name: "name_en", widget: "string" }
+      - {label: "Name GR", name: "name_el", widget: "string" }
+      - {label: "Description EN", name: "description_en", widget: "string", required: false }
+      - {label: "Description GR", name: "description_el", widget: "string", required: false }
       - {label: "Image Main", name: "image_main", widget: "image", required: false }
       - {label: "Image 150", name: "image_150", widget: "image", required: false }
       - {label: "Image 300", name: "image_300", widget: "image", required: false }
