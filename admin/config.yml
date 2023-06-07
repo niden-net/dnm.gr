@@ -9,7 +9,7 @@ collections:
   - name: settings
     label: Settings
     files:
-      - file: _data/settings.yml
+      - file: _data/set.yml
         label: All Items
         name: settings_items
         fields:
