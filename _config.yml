@@ -1,16 +1,12 @@
-app:
-  title: 'Permixo Ltd'
-  name: 'Permixo Ltd'
-  author: 'niden.net'
-  description: 'Permixo Ltd website'
-  keywords: 'permixo, under construction'
-  email: 'info@permixo.cy'
-
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     disable: true
 
+include:
+  - _redirects
+
+# Exclude these files from our production _site
 exclude:
   - vendor
   - Gemfile
@@ -18,6 +14,5 @@ exclude:
   - LICENSE
   - README.md
   - serve
-
-
-
+  - wip
+  - wget

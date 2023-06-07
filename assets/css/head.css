@@ -1,0 +1,69 @@
+
+ul.products li.product.list .product-wrapper {
+    padding-left: 189px;
+}
+
+ul.products li.product.list .product-wrapper a.thumb {
+    margin-left: -189px;
+    width: 150px;
+}
+
+.single-product.woocommerce div.product.product-layout-1 div.images {
+    width: 25.641025641026%;
+}
+
+.single-product.woocommerce div.product.product-layout-1 div.images .thumbnails {
+    width: 279.77207977208%;
+}
+
+.single-product.woocommerce div.product.product-layout-1 div.summary {
+    width: 71.794871794872%;
+}
+
+p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+h6 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#nav ul li a, #header-sidebar .widget_search_mini input, a, p, li, address, dd, blockquote, td, th, .paragraph-links a, a.text-color, .menu-select select, .testimonial-widget li a, .testimonial-widget li p, #search_mini, .newsletter-input input, .newsletter-submit input, .features-tab-container .features-tab-labels li, .features-tab-content, .portfolio-libra .work-projects ul.pagination_nav li a, .widget.text-image, .text-color, .content_slider_text_block_wrap a {
+    font-family: 'Noto Sans' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+}

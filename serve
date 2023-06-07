@@ -1,0 +1,9 @@
+#!/bin/bash
+
+docker run \
+  --rm \
+  -it \
+  --name dnm \
+  --volume="$PWD:/srv/jekyll" \
+  jekyll/jekyll:latest \
+  jekyll serve --verbose --watch

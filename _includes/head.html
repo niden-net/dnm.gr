@@ -1,0 +1,130 @@
+<!-- START HEAD -->
+<head>
+    <meta charset="UTF-8"/>
+    <!-- this line will appear only if the website is visited with an iPad -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes"/>
+
+    <title>DNM | Zip your mind</title>
+
+    <link rel="alternate" hreflang="el" href="https://www.dnm.gr/"/>
+    <link rel="alternate" hreflang="en-US" href="https://www.dnm.gr/en/"/>
+
+    <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+    <link rel='dns-prefetch' href='//s.w.org'/>
+
+    <link rel="canonical" href="/{{ page.url }}/"/>
+    <link rel='shortlink' href='/{{ page.url }}/'/>
+
+    <!-- BOOTSTRAP STYLESHEET -->
+    <link rel="stylesheet"
+          type="text/css"
+          media="all"
+          href="/assets/socute/core/assets/css/reset-bootstrap.css?v={{ site.data.settings.asset_tag }}"/>
+    <!-- MAIN THEME STYLESHEET -->
+    <link rel="stylesheet"
+          type="text/css"
+          media="all"
+          href="/assets/socute/style.css?v={{ site.data.settings.asset_tag }}"/>
+
+    <script type="text/javascript">
+        var yit_responsive_menu_type = "arrow";
+        var yit_responsive_menu_text = "VIEW NAVIGATION";
+    </script>
+
+    <link rel="shortcut icon"
+          type="image/x-icon"
+          href="/assets/img/favicon.png"/>
+    <link rel="icon"
+          type="image/x-icon"
+          href="/assets/img/favicon.png"/>
+
+    <link rel="apple-touch-icon-precomposed"
+          sizes="144x144"
+          href="/assets/socute/apple-touch-icon-144x.png"/>
+    <link rel="apple-touch-icon-precomposed"
+          sizes="114x114"
+          href="/assets/socute/apple-touch-icon-114x.png"/>
+    <link rel="apple-touch-icon-precomposed"
+          href="/assets/socute/apple-touch-icon-57x.png"/>
+
+    <link rel='stylesheet' id='contact-form-7-css'
+          href='/assets/contact-form-7/includes/css/styles.css?v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media='all'/>
+    <link rel='stylesheet'
+          id='fsb-image-css'
+          href='/assets/simple-full-screen-background-image/includes/fullscreen-image.css?v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media='all'/>
+    <link rel='stylesheet'
+          id='yit-layout-css'
+          href='/assets/socute/woocommerce/style.css?v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media=''/>
+    <link rel='stylesheet'
+          id='tt-easy-google-fonts-css'
+          href='https://fonts.googleapis.com/css?family=Noto+Sans%3Aregular&#038;subset=latin%2Cgreek&#038;v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media='all'/>
+    <link rel='stylesheet'
+          id='wpml-cms-nav-css-css'
+          href='/assets/wpml-cms-nav/res/css/navigation.css?v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media='all'/>
+    <link rel='stylesheet'
+          id='cms-navigation-style-base-css'
+          href='/assets/wpml-cms-nav/res/css/cms-navigation-base.css?v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media='screen'/>
+    <link rel='stylesheet'
+          id='cms-navigation-style-css'
+          href='/assets/wpml-cms-nav/res/css/cms-navigation.css?v={{ site.data.settings.asset_tag }}'
+          type='text/css'
+          media='screen'/>
+
+    <script type='text/javascript'
+            src='/assets/js/jquery/jquery.js?v={{ site.data.settings.asset_tag }}'></script>
+    <script type='text/javascript'
+            src='/assets/js/jquery/jquery-migrate.min.js?v={{ site.data.settings.asset_tag }}'></script>
+
+    <link rel="stylesheet"
+          href="/assets/css/head.css?v={{ site.data.settings.asset_tag }}"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="/assets/css/cache.css?v={{ site.data.settings.asset_tag }}"
+          type="text/css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat:400|Pacifico:400|Average:400|Open+Sans:400|Raleway:400|Bebas:400&subset=latin"
+          type="text/css"/>
+
+    <script type="text/javascript">
+        (function (w, d, u) {
+            if (w.njQuery === u) {
+                w.bindNextendQ = [];
+
+                function pushToReady(x) {
+                    w.bindNextendQ.push([alias.handler, "ready", x]);
+                }
+
+                function pushToLoad(x) {
+                    w.bindNextendQ.push([alias.handler, "load", x]);
+                }
+
+                var alias = {
+                    handler: w,
+                    ready: pushToReady,
+                    load: pushToLoad
+                }
+
+                w.njQuery = function (handler) {
+                    alias.handler = handler;
+                    return alias;
+                }
+            }
+        })(window, document);
+    </script>
+
+    {% include analytics.html %}
+</head>
+<!-- END HEAD -->

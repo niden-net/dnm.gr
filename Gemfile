@@ -1,10 +1,9 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem 'jekyll', '~>4.0'
+gem 'jekyll'
+gem "webrick"
 
 group :jekyll_plugins do
-    gem 'jekyll-feed'
     gem 'jekyll-sitemap'
-    gem 'kramdown'
-    gem 'rouge'
+    gem 'kramdown-parser-gfm'
 end
