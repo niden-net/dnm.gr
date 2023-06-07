@@ -13,12 +13,14 @@ collections:
         name: "products"
         file: "_data/test.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - label: Products
+            name: products
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: English, name: en, widget: string}
+              - {label: Greek, name: el, widget: string}
+              - {label: Description English, name: description_en, widget: string}
+              - {label: Description Greek, name: description_el, widget: string}
+              - {label: Image, name: image_main, widget: image}
+              - {label: Image Thumb, name: image_thumb, widget: image}
+              - {label: Categories, name: categories, widget: string}
