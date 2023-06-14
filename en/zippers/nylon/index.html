@@ -2,8 +2,10 @@
 layout: default
 language: en
 language_code: en_US
+filter: nylon
 ---
 
+{% assign data = site.products  %}
 
 <div id="primary" class="sidebar-left">
     <div class="container group">
@@ -13,42 +15,42 @@ language_code: en_US
             <div id="content-shop" class="span9 content group"><!-- START PAGE META -->
                 <div id="page-meta" class="group">
                     <h1 class="page-title">
-                        Nylon
+                        {{ page.filter | capitalize }}
                     </h1>
                 </div>
                 <!-- END PAGE META -->
 
                 <ul class="products row">
-                    <li class="grid with-hover add-hover open-on-mobile span2 first post-95 product type-product status-publish has-post-thumbnail product_cat-49 product_cat-nylon product_cat-85 shipping-taxable product-type-simple product-cat-%cf%86%ce%b5%cf%81%ce%bc%ce%bf%cf%85%ce%ac%cf%81 product-cat-nylon product-cat-%ce%bd%ce%bf3 instock">
+                    {% for product in data %}
+                    <li class="grid with-hover add-hover open-on-mobile span2 first post-95 product type-product status-publish has-post-thumbnail product_cat-49 product_cat-nylon product_cat-85 shipping-taxable product-type-simple product-cat-nylon instock cms-nav-sub-section">
                         <div class="product-wrapper">
-                            <a href="https://www.dnm.gr/shop/%cf%86%ce%b5%cf%81%ce%bc%ce%bf%cf%85%ce%ac%cf%81/n3-nylon-fousta-1/">
-                                <a href="https://www.dnm.gr/shop/%cf%86%ce%b5%cf%81%ce%bc%ce%bf%cf%85%ce%ac%cf%81/n3-nylon-fousta-1/"
-                                   class="thumb">
-                                    <span class="face">
-                                        <img width="150"
-                                             height="150"
-                                             src="https://www.dnm.gr/wp-content/uploads/2015/01/N3_NYLON_FOUSTA_1-150x150.png"
-                                             class="attachment-shop_catalog size-shop_catalog wp-post-image"
-                                             alt="" />
-                                    </span>
-                                </a>
-                                <h3>
-                                    N3 NYLON FOUSTA 1
-                                </h3>
-                                <div class="grid-add-to-cart">
-                                    <a href="https://www.dnm.gr/shop/%cf%86%ce%b5%cf%81%ce%bc%ce%bf%cf%85%ce%ac%cf%81/n3-nylon-fousta-1/"
-                                       rel="nofollow"
-                                       data-product_id="95"
-                                       data-quantity="1"
-                                       data-product_sku=""
-                                       class="button product_type_simple">
-                                        Read More
-                                    </a>
-                                </div>
-                                <div class="clear"></div>
+                            <a href="/{{ page.language }}/zippers/{{ page.filter }}/{{ product.name_en | slugify }}"
+                               class="thumb">
+                                <span class="face">
+                                    <img width="150"
+                                         height="150"
+                                         src="{{ product.image_150 }}"
+                                         class="attachment-shop_catalog size-shop_catalog wp-post-image"
+                                         alt="" />
+                                </span>
                             </a>
+                            <h3>
+                                {{ product.name_en }}
+                            </h3>
+                            <div class="grid-add-to-cart">
+                                <a href="/{{ page.language }}/zippers/{{ page.filter }}/{{ product.name_en | slugify }}"
+                                   rel="nofollow"
+                                   data-product_id="95"
+                                   data-quantity="1"
+                                   data-product_sku=""
+                                   class="button product_type_simple">
+                                    More
+                                </a>
+                            </div>
+                            <div class="clear"></div>
                         </div>
                     </li>
+                    {% endfor %}
                 </ul>
             </div>
 
@@ -114,6 +116,14 @@ language_code: en_US
                                 Οδηγοί
                             </a> <span class="count">(139)</span>
                         </li>
+
+                        {% for product in data %}
+                        <li class="cat-item cat-item-54">
+                            <a href="/{{ page.language }}/{{ product.name_en }}/">
+                                {{ product.title_en }}
+                            </a> <span class="count">({{ product.size }})</span>
+                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>

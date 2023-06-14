@@ -4,8 +4,7 @@ kramdown:
     disable: true
 
 collections:
-  products:
-    output: true
+  - products
 
 include:
   - _redirects
