@@ -7,49 +7,8 @@
 <div id="page-container" class="fade show">
     {% include top_nav.html %}
     {% include header.html %}
-
-    <!-- BEGIN #promotions -->
-    <div id="content" class="has-bg section-container">
-        <!-- BEGIN content-bg -->
-        <div class="cover-bg"
-             style="background-image: url(/assets/img/background1920_890.jpg);">
-        </div>
-        <!-- BEGIN container -->
-        <div class="container">
-            <!-- BEGIN row -->
-            <div class="row gx-2">
-                <!-- BEGIN promotion -->
-                <div class="promotion promotion-lg">
-                    <div class="promotion-image text-end promotion-image-overflow-bottom">
-                        <img src="/assets/img/Home_banner.jpg" alt="" />
-                    </div>
-                    <div class="promotion-caption promotion-caption-inverse">
-                    </div>
-                </div>
-                <!-- END promotion -->
-            </div>
-            <!-- END row -->
-        </div>
-        <!-- END container -->
-    </div>
-    <!-- END #promotions -->
-
-    <!-- BEGIN #footer-copyright -->
-    <div id="footer-copyright"
-         class="footer-copyright">
-        <!-- BEGIN container -->
-        <div class="container">
-            <div class="copyright">
-                17ης Νοεμβρίου 81, 55535 Πυλαία,
-                T: 2310 935176, 2310 938797,
-                Φ: 2310 905132,
-                E: <a href="mailto:info@dnm.gr">info@dnm.gr</a> |
-                Copyright &copy; DNM 2014-Present
-            </div>
-        </div>
-        <!-- END container -->
-    </div>
-    <!-- END #footer-copyright -->
+    {{ content }}
+    {% include footer.html %}
 </div>
 <!-- END #page-container -->
 
