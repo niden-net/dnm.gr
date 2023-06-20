@@ -21,24 +21,6 @@ i18n:
 
 
 collections:
-  - name: pages
-    label: Pages
-    # Configure i18n for this collection.
-    i18n:
-      structure: single_file
-      locales: [en, el]
-    files:
-      - name: translations
-        label: Translations
-        file: _data/translations.yml
-        i18n: true
-        fields:
-          - label: Translation Strings
-            name: translation_strings
-            widget: list
-            fields:
-
-
   - name: products
     label: Products
     folder: _products
