@@ -44,8 +44,12 @@ collections:
         name: image_150
         widget: image
         required: false
-      - label: Main Image
+      - label: Image 300
         name: image_300
+        widget: image
+        required: false
+      - label: Main Image
+        name: main_image
         widget: image
         required: false
       - label: Tags

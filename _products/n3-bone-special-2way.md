@@ -1,11 +1,14 @@
 ---
 en:
   name: N3 BONE SPECIAL 2WAY
+  description: N3 BONE SPECIAL 2WAY
   tags:
     - nylon
     - zipper
     - no3
-  description: N3 BONE SPECIAL 2WAY
+  image_main: /assets/img/n3_bone_special_5.png
+  image_150: /assets/img/n3_bone_special_5-150x150.png
+  image_300: /assets/img/n3_bone_special_5-300x300.png
 el:
   name: ΚΟΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ 2WAY
   description: ΚΟΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ 2WAY
