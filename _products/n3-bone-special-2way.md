@@ -7,9 +7,9 @@ en:
     - nylon
     - zipper
     - no3
-  image_main: /assets/img/n3_bone_special_5.webp
-  image_150: /assets/img/n3_bone_special_5-150x150.webp
-  image_300: /assets/img/n3_bone_special_5-300x300.webp
+  image_main: /assets/img/n3-bone-special-5.webp
+  image_150: /assets/img/n3-bone-special-5-150x150.webp
+  image_300: /assets/img/n3-bone-special-5-300x300.webp
 el:
   name: ΚΟΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ 2WAY
   description: ΚΟΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ 2WAY

@@ -7,9 +7,9 @@ en:
     - nylon
     - zipper
     - no3
-  image_main: /assets/img/n3_nylon_special_2.webp
-  image_150: /assets/img/n3_nylon_special_2-150x150.webp
-  image_300: /assets/img/n3_nylon_special_2-300x300.webp
+  image_main: /assets/img/n3-nylon-special-2.webp
+  image_150: /assets/img/n3-nylon-special-2-150x150.webp
+  image_300: /assets/img/n3-nylon-special-2-300x300.webp
 el:
   name: N3 NYLON ΣΠΕΣΙΑΛ 2
   description: N3 NYLON ΣΠΕΣΙΑΛ 2
