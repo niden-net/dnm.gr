@@ -2,7 +2,7 @@
 en:
   name: N3 NYLON FOUSTA 1
   description: N3 NYLON FOUSTA 1
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

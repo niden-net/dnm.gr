@@ -2,7 +2,7 @@
 en:
   name: N5 NYLON SPECIAL 2
   description: N5 NYLON SPECIAL 2
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

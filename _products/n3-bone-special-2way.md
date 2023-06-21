@@ -2,7 +2,7 @@
 en:
   name: N3 BONE SPECIAL 2WAY
   description: N3 BONE SPECIAL 2WAY
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

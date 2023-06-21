@@ -2,7 +2,7 @@
 en:
   name: N5 NYLON CLOSED WITH 2 DRIVERS
   description: N5 NYLON CLOSED WITH 2 DRIVERS
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

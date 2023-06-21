@@ -2,7 +2,7 @@
 en:
   name: N5 NYLON 2WAY SPLIT
   description: N5 NYLON 2WAY SPLIT
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

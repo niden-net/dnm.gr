@@ -2,7 +2,7 @@
 en:
   name: N5 NYLON CLOSED
   description: N5 NYLON CLOSED
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

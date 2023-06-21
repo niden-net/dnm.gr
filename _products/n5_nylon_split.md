@@ -2,7 +2,7 @@
 en:
   name: N5 NYLON SPLIT
   description: N5 NYLON SPLIT
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

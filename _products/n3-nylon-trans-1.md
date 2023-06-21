@@ -2,7 +2,7 @@
 en:
   name: N3 NYLON TRANS 2
   description: N3 NYLON TRANS 2
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

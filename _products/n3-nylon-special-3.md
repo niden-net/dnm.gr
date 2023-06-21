@@ -2,7 +2,7 @@
 en:
   name: N3 NYLON SPECIAL 3
   description: N3 NYLON SPECIAL 3
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper

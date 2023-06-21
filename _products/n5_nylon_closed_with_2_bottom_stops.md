@@ -2,7 +2,7 @@
 en:
   name: N5 NYLON CLOSED WITH 2 BOTTOM STOPS
   description: N5 NYLON CLOSED WITH 2 BOTTOM STOPS
-  category: zipper
+  categories: zipper
   tags:
     - nylon
     - zipper
