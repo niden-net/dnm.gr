@@ -1,3 +1,11 @@
+{% if 'en' == page.language %}
+{% assign flagImage = 'flag-english' %}
+{% assign flagAlt = 'English' %}
+{% else %}
+{% assign flagImage = 'flag-greek' %}
+{% assign flagAlt = 'Ελληνικά' %}
+{% endif %}
+
     <!-- BEGIN #top-nav -->
     <div id="top-nav" class="top-nav">
         <!-- BEGIN container -->
@@ -15,17 +23,18 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-end">
                     <li class="dropdown dropdown-hover">
-                        <a href="/en/" data-bs-toggle="dropdown">
-                            <img src="/assets/img/flag/flag-english.png"
+                        <a href="/{{ page.language }}/{{ page.url }}"
+                           data-bs-toggle="dropdown">
+                            <img src="/assets/img/flag/{{ flagImage }}.png"
                                  class="flag-img"
-                                 alt="" /> English <b class="caret"></b>
+                                 alt="" /> {{ flagAlt }} <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="/en/" class="dropdown-item">
+                            <li><a href="/en/{{ page.url }}" class="dropdown-item">
                                 <img src="/assets/img/flag/flag-english.png"
                                      class="flag-img" alt="" /> English</a>
                             </li>
-                            <li><a href="/el/" class="dropdown-item">
+                            <li><a href="/el/{{ page.url }}" class="dropdown-item">
                                 <img src="/assets/img/flag/flag-greek.png"
                                      class="flag-img" alt="" /> Ελληνικά</a>
                             </li>
