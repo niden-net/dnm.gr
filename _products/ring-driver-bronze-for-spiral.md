@@ -2,6 +2,7 @@
 en:
   name: '"RING" DRIVER BRONZE FOR SPIRAL'
   description: '"RING" DRIVER BRONZE FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral

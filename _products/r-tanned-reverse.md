@@ -2,6 +2,7 @@
 en:
   name: '"R" TANNED REVERSE'
   description: '"R" TANNED REVERSE'
+  categories: driver
   tags:
     - driver
     - spiral

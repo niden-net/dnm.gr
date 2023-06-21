@@ -2,6 +2,7 @@
 en:
   name: '"R" DRIVER BRONZE FOR SPIRAL'
   description: '"R" DRIVER BRONZE FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral

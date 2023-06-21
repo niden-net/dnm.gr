@@ -2,6 +2,7 @@
 en:
   name: '"RING" DRIVER TANNED FOR SPIRAL'
   description: '"RING" DRIVER TANNED FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral

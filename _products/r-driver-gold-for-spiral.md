@@ -2,6 +2,7 @@
 en:
   name: '"R" DRIVER GOLD FOR SPIRAL'
   description: '"R" DRIVER GOLD FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral

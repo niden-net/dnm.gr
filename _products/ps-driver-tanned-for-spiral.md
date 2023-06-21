@@ -2,6 +2,7 @@
 en:
   name: '"PS" DRIVER TANNED FOR SPIRAL'
   description: '"PS" DRIVER TANNED FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral

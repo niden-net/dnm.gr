@@ -2,6 +2,7 @@
 en:
   name: '"R" DRIVER TANNED FOR SPIRAL'
   description: '"R" DRIVER TANNED FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral

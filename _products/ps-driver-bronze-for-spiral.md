@@ -2,6 +2,7 @@
 en:
   name: '"PS" DRIVER BRONZE FOR SPIRAL'
   description: '"PS" BRONZE TANNED FOR SPIRAL'
+  categories: driver
   tags:
     - driver
     - spiral
