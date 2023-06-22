@@ -10,7 +10,9 @@ layout: default
                 <!-- BEGIN promotion -->
                 <div class="promotion">
                     <div class="promotion-image">
-                        <img src="/assets/img/Home_banner.jpg" alt="" class="img-fluid" />
+                        <img src="/assets/img/Home_banner.webp"
+                             alt=""
+                             class="img-fluid" />
                     </div>
                 </div>
                 <!-- END promotion -->
@@ -21,13 +23,13 @@ layout: default
         <div class="container">
             <!-- BEGIN row -->
             <div class="row gx-2">
-                {{ site.data[page.language].content_index_1 }}
+                {{ site.data.translations[page.language].content_index_1 }}
                 <br>
                 <br>
-                {{ site.data[page.language].content_index_2 }}
+                {{ site.data.translations[page.language].content_index_2 }}
                 <br>
                 <br>
-                {{ site.data[page.language].content_index_3 }}
+                {{ site.data.translations[page.language].content_index_3 }}
             </div>
             <!-- END row -->
         </div>

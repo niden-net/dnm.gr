@@ -1,0 +1,99 @@
+- name: menu_homepage
+  url:
+- name: menu_zipper
+  url: zipper
+  children:
+    - name: menu_zipper_nylon
+      url: zipper/nylon
+      children:
+        - name: menu_zipper_nylon_no3
+          url: zipper/nylon/no3
+        - name: menu_zipper_nylon_no5
+          url: zipper/nylon/no5
+        - name: menu_zipper_nylon_no10
+          url: zipper/nylon/no10
+    - name: menu_zipper_bone
+      url: zipper/bone
+      children:
+        - name: menu_zipper_bone_no3
+          url: zipper/bone/no3
+        - name: menu_zipper_bone_no5
+          url: zipper/bone/no5
+        - name: menu_zipper_bone_no8
+          url: zipper/bone/no8
+    - name: menu_zipper_metal
+      url: zipper/metal
+      children:
+        - name: menu_zipper_metal_gold
+          url: zipper/metal/gold
+        - name: menu_zipper_metal_black_nickel
+          url: zipper/metal/black-nickel
+        - name: menu_zipper_metal_aluminium_nickel
+          url: zipper/metal/aluminium-nickel
+        - name: menu_zipper_metal_bronze
+          url: zipper/metal/bronze
+    - name: menu_zipper_special
+      url: zipper/special
+      children:
+        - name: menu_zipper_special_spiral
+          url: zipper/special/spiral
+        - name: menu_zipper_special_bone
+          url: zipper/special/bone
+        - name: menu_zipper_special_metal
+          url: zipper/special/metal
+    - name: menu_zipper_tape
+      url: zipper/tape
+      children:
+        - name: menu_zipper_tape_no3
+          url: zipper/tape/no3
+        - name: menu_zipper_tape_no5
+          url: zipper/tape/no5
+        - name: menu_zipper_tape_no10
+          url: zipper/tape/no10
+- name: menu_driver
+  url: driver
+  children:
+    - name: menu_driver_spiral
+      url: driver/spiral
+      children:
+        - name: menu_driver_spiral_no3
+          url: driver/spiral/no3
+        - name: menu_driver_spiral_no4
+          url: driver/spiral/no4
+        - name: menu_driver_spiral_no5
+          url: driver/spiral/no5
+        - name: menu_driver_spiral_no10
+          url: driver/spiral/no10
+    - name: menu_driver_bone
+      url: driver/bone
+    - name: menu_driver_aluminium_nickel
+      url: driver/aluminium-nickel
+      children:
+        - name: menu_driver_aluminium-nickel_no5
+          url: driver/aluminium-nickel/no5
+        - name: menu_driver_aluminium-nickel_no8
+          url: driver/aluminium-nickel/no8
+    - name: menu_driver_gold
+      url: driver/gold
+    - name: menu_driver_bronze
+      url: driver/bronze
+      children:
+        - name: menu_driver_bronze_no5
+          url: driver/bronze/no5
+        - name: menu_driver_bronze_no8
+          url: driver/bronze/no8
+    - name: menu_driver_black_nickel
+      url: driver/black-nickel
+      children:
+        - name: menu_driver_black-nickel_no5
+          url: driver/black-nickel/no5
+        - name: menu_driver_black-nickel_no8
+          url: driver/black-nickel/no8
+    - name: menu_driver_puller
+      url: driver/puller
+    - name: menu_driver_special
+      url: driver/special
+- name: menu_velcro
+  url: velcro
+- name: menu_contact
+  url: contact

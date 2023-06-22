@@ -27,308 +27,112 @@
 
                 <!-- BEGIN header-nav -->
                 <div class="header-nav">
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <div class="collapse navbar-collapse"
+                         id="navbar-collapse">
                         <ul class="nav justify-content-end">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/{{ page.language }}" >
-                                    HOMEPAGE
-                                </a>
-                            </li>
-
+                            {% for menu in site.data.menu %}
+                            {% if menu.children %}
                             <li class="nav-item dropdown dropdown-mobile">
                                 <a class="nav-link dropdown-toggle"
-                                   href="/{{ page.language }}/zipper/"
+                                   href="/{{ page.language }}/{{ menu.url }}"
                                    role="button"
                                    data-bs-toggle="dropdown"
                                    aria-expanded="false">
-                                    ΦΕΡΜΟΥΑΡ
+                                    {{ site.data.translations[page.language][menu.name] }}
                                     <b class="caret"></b>
                                     <span class="arrow top"></span>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu"
+                                     aria-labelledby="dropdownMenuButton">
+                                    {% assign submenu = menu.children %}
+                                    {% for submenu in submenu %}
+                                    {% if submenu.children %}
                                     <div class="dropdown dropend">
                                         <a class="dropdown-item dropdown-toggle"
-                                           href="/{{ page.language }}/zipper/nylon/"
-                                           id="dropdown-layouts"
+                                           href="/{{ page.language }}/{{ submenu.url }}"
                                            data-bs-toggle="dropdown"
                                            aria-haspopup="true"
                                            aria-expanded="false">
-                                            NYLON <i class="fa fa-fw fa-angle-right text-muted"></i>
+                                            {{ site.data.translations[page.language][submenu.name] }}
+                                             <i class="fa fa-fw fa-angle-right text-muted"></i>
                                         </a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
+                                        <div class="dropdown-menu"
+                                             aria-labelledby="dropdown-layouts">
+                                            {% assign subsubmenu = submenu.children %}
+                                            {% for subsubmenu in subsubmenu %}
                                             <a class="dropdown-item"
-                                               href="/{{ page.language }}/zipper/nylon/no3/">
-                                                Νο3
+                                               href="/{{ page.language }}/{{ subsubmenu.url }}">
+                                                {{ site.data.translations[page.language][subsubmenu.name] }}
                                             </a>
-                                            <a class="dropdown-item"
-                                               href="/{{ page.language }}/zipper/nylon/no5/">
-                                                Νο5
-                                            </a>
-                                            <a class="dropdown-item"
-                                               href="#">
-                                                Νο10
-                                            </a>
+                                            {% endfor %}
                                         </div>
                                     </div>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΚΟΚΚΑΛΙΝΑ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Νο3</a>
-                                            <a class="dropdown-item" href="#">Νο5</a>
-                                            <a class="dropdown-item" href="#">Νο8</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΜΕΤΑΛΛΙΚΑ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Χρυσό</a>
-                                            <a class="dropdown-item" href="#">Black Nickel</a>
-                                            <a class="dropdown-item" href="#">Αλουμίνιο Νίκελ</a>
-                                            <a class="dropdown-item" href="#">Μπρονζέ</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΕΙΔΙΚΟΙ ΤΥΠΟΙ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Σπιράλ</a>
-                                            <a class="dropdown-item" href="#">Κοκκάλινα</a>
-                                            <a class="dropdown-item" href="#">Μεταλλικά</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΤΑΙΝΙΕΣ ΜΕΤΡΟΥ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Νο3</a>
-                                            <a class="dropdown-item" href="#">Νο5</a>
-                                            <a class="dropdown-item" href="#">Νο8-10</a>
-                                        </div>
-                                    </div>
-
+                                    {% else %}
+                                    <a class="dropdown-item"
+                                       href="/{{ page.language }}/{{ submenu.name }}">
+                                        {{ site.data.translations[page.language][submenu.name] }}
+                                    </a>
+                                    {% endif %}
+                                    {% endfor %}
                                 </div>
-
                             </li>
-
-                            <li class="nav-item dropdown dropdown-mobile">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    ΟΔΗΓΟΙ
-                                    <b class="caret"></b>
-                                    <span class="arrow top"></span>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΣΠΙΡΑΛ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Νο3</a>
-                                            <a class="dropdown-item" href="#">Νο4</a>
-                                            <a class="dropdown-item" href="#">Νο5</a>
-                                            <a class="dropdown-item" href="#">Νο10</a>
-                                        </div>
-                                    </div>
-
-                                    <a class="dropdown-item" href="#">ΚΟΚΚΑΛΙΝΑ</a>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΑΛΟΥΜΙΝΙΟ-ΝΙΚΕΛ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Νο5</a>
-                                            <a class="dropdown-item" href="#">Νο8</a>
-                                        </div>
-                                    </div>
-
-                                    <a class="dropdown-item" href="#">ΧΡΥΣΟ</a>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ΜΠΡΟΝΖΕ <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Νο5</a>
-                                            <a class="dropdown-item" href="#">Νο8</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="dropdown dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">BLACK NICKEL <i class="fa fa-fw fa-angle-right text-muted"></i></a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                            <a class="dropdown-item" href="#">Νο5</a>
-                                            <a class="dropdown-item" href="#">Νο8</a>
-                                        </div>
-                                    </div>
-
-                                    <a class="dropdown-item" href="#">PULLER</a>
-                                    <a class="dropdown-item" href="#">ΕΙΔΙΚΑ BRANDS</a>
-                                </div>
-
-                            </li>
-
                             <li class="dropdown-hover-all dropdown-desktop">
                                 <div class="dropdown">
                                     <a class="nav-link dropdown-toggle"
-                                       href="/{{ page.language }}/zipper/"
                                        id="dropdownMenuButtonHover"
                                        data-bs-toggle="dropdown"
                                        aria-haspopup="true"
-                                       aria-expanded="false">
-                                        ΦΕΡΜΟΥΑΡ <b class="caret"></b>
-                                        <span class="arrow top"></span>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonHover">
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle"
-                                               href="/{{ page.language }}/zipper/nylon/"
-                                               id="dropdown-layouts"
-                                               data-bs-toggle="dropdown"
-                                               aria-haspopup="true"
-                                               aria-expanded="false">
-                                                NYLON
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item"
-                                                   href="/{{ page.language }}/zipper/nylon/no3/">
-                                                    Νο3
-                                                </a>
-                                                <a class="dropdown-item"
-                                                   href="/{{ page.language }}/zipper/nylon/no5/">
-                                                    Νο5
-                                                </a>
-                                                <a class="dropdown-item"
-                                                   href="/{{ page.language }}/zipper/nylon/no10/">
-                                                    Νο10
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΚΟΚΚΑΛΙΝΑ
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Νο3</a>
-                                                <a class="dropdown-item" href="#">Νο5</a>
-                                                <a class="dropdown-item" href="#">Νο8</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΜΕΤΑΛΛΙΚΑ
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Χρυσό</a>
-                                                <a class="dropdown-item" href="#">Black Nickel</a>
-                                                <a class="dropdown-item" href="#">Αλουμίνιο Νίκελ</a>
-                                                <a class="dropdown-item" href="#">Μπρονζέ</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΕΙΔΙΚΟΙ ΤΥΠΟΙ
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Σπιράλ</a>
-                                                <a class="dropdown-item" href="#">Κοκκάλινα</a>
-                                                <a class="dropdown-item" href="#">Μεταλλικά</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΤΑΙΝΙΕΣ ΜΕΤΡΟΥ
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Νο3</a>
-                                                <a class="dropdown-item" href="#">Νο5</a>
-                                                <a class="dropdown-item" href="#">Νο8-10</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="dropdown-hover-all dropdown-desktop">
-                                <div class="dropdown">
-                                    <a class="nav-link dropdown-toggle" id="dropdownMenuButtonHover" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
-                                        ΟΔΗΓΟΙ
+                                       aria-expanded="false"
+                                       href="{{ menu.url }}">
+                                        {{ site.data.translations[page.language][menu.name] }}
                                         <b class="caret"></b>
                                         <span class="arrow top"></span>
                                     </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonHover">
-
+                                    <div class="dropdown-menu"
+                                         aria-labelledby="dropdownMenuButtonHover">
+                                        {% assign submenu = menu.children %}
+                                        {% for submenu in submenu %}
+                                        {% if submenu.children %}
                                         <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΣΠΙΡΑΛ
+                                            <a class="dropdown-item dropdown-toggle"
+                                               href="/{{ page.language }}/{{ submenu.url }}"
+                                               data-bs-toggle="dropdown"
+                                               aria-haspopup="true"
+                                               aria-expanded="false">
+                                                {{ site.data.translations[page.language][submenu.name] }}
                                                 <i class="fa fa-fw fa-angle-right text-muted"></i>
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Νο3</a>
-                                                <a class="dropdown-item" href="#">Νο4</a>
-                                                <a class="dropdown-item" href="#">Νο5</a>
-                                                <a class="dropdown-item" href="#">Νο10</a>
+                                            <div class="dropdown-menu"
+                                                 aria-labelledby="dropdown-layouts">
+                                                {% assign subsubmenu = submenu.children %}
+                                                {% for subsubmenu in subsubmenu %}
+                                                <a class="dropdown-item"
+                                                   href="/{{ page.language }}/{{ subsubmenu.url }}">
+                                                    {{ site.data.translations[page.language][subsubmenu.name] }}
+                                                </a>
+                                                {% endfor %}
                                             </div>
                                         </div>
-
-                                        <a class="dropdown-item" href="#">ΚΟΚΚΑΛΙΝΑ</a>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΑΛΟΥΜΙΝΙΟ-ΝΙΚΕΛ
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Νο5</a>
-                                                <a class="dropdown-item" href="#">Νο8</a>
-                                            </div>
-                                        </div>
-
-                                        <a class="dropdown-item" href="#">ΧΡΥΣΟ</a>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                ΜΠΡΟΝΖΕ
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Νο5</a>
-                                                <a class="dropdown-item" href="#">Νο8</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="dropdown dropend">
-                                            <a class="dropdown-item dropdown-toggle" href="#" id="dropdown-layouts" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                BLACK NICKEL
-                                                <i class="fa fa-fw fa-angle-right text-muted"></i>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdown-layouts">
-                                                <a class="dropdown-item" href="#">Νο5</a>
-                                                <a class="dropdown-item" href="#">Νο8</a>
-                                            </div>
-                                        </div>
-
-                                        <a class="dropdown-item" href="#">PULLER</a>
-                                        <a class="dropdown-item" href="#">ΕΙΔΙΚΑ BRANDS</a>
-
+                                        {% else %}
+                                        <a class="dropdown-item"
+                                           href="/{{ page.language }}/{{ submenu.url }}">
+                                            {{ site.data.translations[page.language][submenu.name] }}
+                                        </a>
+                                        {% endif %}
+                                        {% endfor %}
                                     </div>
                                 </div>
                             </li>
-
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="/{{ page.language }}" >VELCRO</a>
+                            {% else %}
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                   href="/{{ page.language }}/{{ menu.url }}" >
+                                    {{ site.data.translations[page.language][menu.name] }}
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/{{ page.language }}" >CONTACT</a>
-                            </li>
+                            {% endif %}
+                            {% endfor %}
                         </ul>
-
                     </div>
                 </div>
                 <!-- END header-nav -->
