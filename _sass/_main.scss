@@ -24,7 +24,7 @@ main {
 }
 
 .header {
-  background-image: url(/assets/img/header.jpg);
+  background-image: url(/assets/img/header.webp);
   background-color: #d38d14;
   background-size: cover;
   background-position: top center;
@@ -183,4 +183,8 @@ main {
   &:hover {
     color: #030303 !important;
   }
+}
+
+.search-category-list ul {
+  list-style-type: none;
 }
