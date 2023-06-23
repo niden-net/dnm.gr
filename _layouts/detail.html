@@ -4,7 +4,7 @@ layout: default
 
 {% assign categoryPosts = site.posts | where: "language", page.language %}
 {% assign categoryProducts = categoryPosts | where: "tags", page.tag %}
-{% assign categoryProducts = categoryProducts | sort: "name" %}
+{% assign categoryProducts = categoryProducts | sort %}
 {% assign conditional = "item.language == " | append: page.language %}
 {% assign categories = site.categories | sort | where_exp: "item", conditional %}
 
@@ -15,6 +15,7 @@ layout: default
     {% endfor %}
 {% endfor %}
 {% assign tags = tags | split: ',' | uniq %}
+{% assign tags = tags | sort %}
 
         <!-- BEGIN search-results -->
         <div id="search-results" class="section-container">
@@ -29,22 +30,24 @@ layout: default
                         <div class="search-toolbar">
                             <!-- BEGIN row -->
                             <div class="row">
-                                <div class="col-lg-6">
+                                <!-- BEGIN col-10 -->
+                                <div class="col-lg-10">
                                     <h4>
                                         {% for tag in tags %}
                                         <a href="/{{ page.language }}/{{ tag }}"
-                                           class="btn btn-warning btn-sm">
+                                           class="badge bg-warning"
+                                           style="margin-bottom: 5px;" >
                                             {{ site.data.translations[page.language][tag] }}
-                                        </a>
+                                        </a>&nbsp;
                                         {% endfor %}
                                     </h4>
                                 </div>
-                                <!-- END col-6 -->
-                                <!-- BEGIN col-6 -->
-                                <div class="col-lg-6 text-end">
+                                <!-- END col-10 -->
+                                <!-- BEGIN col-2 -->
+                                <div class="col-lg-2 text-end">
                                     {{ categoryProducts.size }} {{ site.data.translations[page.language].products }}
                                 </div>
-                                <!-- END col-6 -->
+                                <!-- END col-2 -->
                             </div>
                             <!-- END row -->
                         </div>
