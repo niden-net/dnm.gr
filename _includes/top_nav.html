@@ -1,3 +1,5 @@
+{% assign enUrl = page.url | replace: "/el/", "/en/" %}
+{% assign elUrl = page.url | replace: "/en/", "/el/" %}
 {% if 'en' == page.language %}
 {% assign flagImage = 'flag-english' %}
 {% assign flagAlt = 'English' %}
@@ -23,18 +25,18 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-end">
                     <li class="dropdown dropdown-hover">
-                        <a href="/{{ page.language }}/{{ page.url }}"
+                        <a href="{{ page.url }}"
                            data-bs-toggle="dropdown">
                             <img src="/assets/img/flag/{{ flagImage }}.png"
                                  class="flag-img"
                                  alt="" /> {{ flagAlt }} <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="/en/{{ page.url }}" class="dropdown-item">
+                            <li><a href="{{ enUrl }}" class="dropdown-item">
                                 <img src="/assets/img/flag/flag-english.png"
                                      class="flag-img" alt="" /> English</a>
                             </li>
-                            <li><a href="/el/{{ page.url }}" class="dropdown-item">
+                            <li><a href="{{ elUrl }}" class="dropdown-item">
                                 <img src="/assets/img/flag/flag-greek.png"
                                      class="flag-img" alt="" /> Ελληνικά</a>
                             </li>
