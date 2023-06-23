@@ -3,10 +3,28 @@ kramdown:
   syntax_highlighter_opts:
     disable: true
 
-collections:
-  - products
+permalink: /:categories/:title/
+
+#collections:
+#  products:
+#    permalink: /products/:title/
+
+defaults:
+  - scope:
+      path: '_posts/en'
+      type: 'posts'
+    values:
+      permalink: 'en/:categories/:title'
+      language: en
+  - scope:
+      path: '_posts/el'
+      type: 'posts'
+    values:
+      permalink: 'el/:categories/:title'
+      language: el
 
 include:
+  - _posts
   - _redirects
 
 # Exclude these files from our production _site
