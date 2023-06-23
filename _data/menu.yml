@@ -80,16 +80,16 @@
 #        - name: menu_drivers_bronze_no8
 #          url: drivers-metal-bronze-no8
     - name: menu_drivers_black_nickel
-      url: drivers/black-nickel
+      url: drivers-metal-black-nickel
       children:
         - name: menu_drivers_black-nickel_no5
-          url: drivers/black-nickel/no5
-        - name: menu_drivers_black-nickel_no8
-          url: drivers/black-nickel/no8
-    - name: menu_drivers_puller
-      url: drivers/puller
+          url: drivers-metal-black-nickel-no5
+#        - name: menu_drivers_black-nickel_no8
+#          url: drivers-black-nickel-no8
+#    - name: menu_drivers_puller
+#      url: drivers/puller
     - name: menu_drivers_special
-      url: drivers/special
+      url: drivers-special-brand
 - name: menu_velcro
   url: velcro
 - name: menu_contact
