@@ -7,6 +7,6 @@ tags:
   - zippers-bone-no5
 image_main: /assets/img/n5-bone-closed-1.webp
 language: en
-name: N3 BONE CLOSED 1
-description: N3 BONE CLOSED 1
+name: N5 BONE CLOSED 1
+description: N5 BONE CLOSED 1
 ---

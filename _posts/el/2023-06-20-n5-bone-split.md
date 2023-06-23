@@ -7,6 +7,6 @@ tags:
   - zippers-bone-no5
 image_main: /assets/img/n5-bone-split.webp
 language: el
-name: N3 ΚΟΚΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ
-description: N3 ΚΟΚΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ
+name: N5 ΚΟΚΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ
+description: N5 ΚΟΚΚΑΛΙΝΟ ΔΙΑΧΩΡΙΖΟΜΕΝΟ
 ---

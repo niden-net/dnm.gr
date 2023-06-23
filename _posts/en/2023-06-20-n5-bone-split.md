@@ -7,6 +7,6 @@ tags:
   - zippers-bone-no5
 image_main: /assets/img/n5-bone-split.webp
 language: en
-name: N3 BONE SPLIT
-description: N3 BONE SPLIT
+name: N5 BONE SPLIT
+description: N5 BONE SPLIT
 ---
