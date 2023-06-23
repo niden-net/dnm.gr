@@ -4,7 +4,14 @@
         <!-- BEGIN container -->
         <div class="container">
             <div class="copyright">
-                {{ site.data[page.language].copyright }}
+                {{ site.data.translations[page.language].contact_address_street }},
+                {{ site.data.translations[page.language].contact_address_zip }},
+                {{ site.data.translations[page.language].contact_address_city }},
+                {{ site.data.translations[page.language].contact_address_country }},
+                {{ site.data.translations[page.language].contact_phone }},
+                {{ site.data.translations[page.language].contact_fax }},
+                {{ site.data.translations[page.language].contact_email }} |
+                {{ site.data.translations[page.language].copyright }}
             </div>
         </div>
         <!-- END container -->

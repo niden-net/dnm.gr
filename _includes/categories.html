@@ -1,0 +1,22 @@
+{% assign langPosts = site.posts | where: "language", page.language %}
+{% assign sideCategories = site.categories | sort %}
+
+                    <!-- BEGIN search-sidebar -->
+                    <div class="search-sidebar">
+                        <h4 class="title mb-0">
+                            {{ site.data.translations[page.language].categories }}
+                        </h4>
+                        <ul class="search-category-list">
+                            {% for category in sideCategories %}
+                            {% assign catName = category[0] %}
+                            {% assign catPosts = langPosts | where: "category", catName %}
+                            <li>
+                                <a href="/{{ page.language }}/{{ category[0] }}">
+                                    {{ site.data.translations[page.language][catName] }}
+                                    <span class="pull-right">({{ catPosts | size }})</span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!-- END search-sidebar -->
