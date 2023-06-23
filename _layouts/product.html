@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+        <!-- BEGIN search-results -->
+        <div id="search-results" class="section-container">
+            <!-- BEGIN container -->
+            <div class="container">
+                <!-- BEGIN search-container -->
+                <div class="search-container">
+                    {% include categories.html %}
+                    <!-- BEGIN search-content -->
+                    <div class="search-content">
+                        <!-- BEGIN search-toolbar -->
+                        <div class="search-toolbar">
+                            <!-- BEGIN row -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h4>
+                                        <a href="/{{ page.language }}/{{ page.category }}"
+                                           class="btn btn-warning btn-sm">
+                                            {{ page.category | capitalize }}
+                                        </a>
+                                        {% if page.type != 'none' %}
+                                        /
+                                        <a href="/{{ page.language}}/{{ page.category }}/{{ page.type }}"
+                                           class="btn btn-warning btn-sm">
+                                            {{ page.type | capitalize }}
+                                        </a>
+                                        {% endif %}
+                                        {% if page.tag != 'none' %}
+                                        /
+                                        <a href="/{{ page.language}}/{{ page.category }}/{{ page.type }}/{{ page.tag }}"
+                                           class="btn btn-warning btn-sm">
+                                            {{ page.tag | capitalize }}
+                                        </a>
+                                        {% endif %}
+                                    </h4>
+                                </div>
+                                <!-- END col-6 -->
+                                <!-- BEGIN col-6 -->
+                                <div class="col-lg-6 text-end">
+
+                                </div>
+                                <!-- END col-6 -->
+                            </div>
+                            <!-- END row -->
+                        </div>
+                        <!-- END search-toolbar -->
+                        <!-- BEGIN search-item-container -->
+                        <div class="search-item-container">
+                            <!-- BEGIN product -->
+                            <div class="product">
+                                <!-- BEGIN product-detail -->
+                                <div class="product-detail">
+                                    <!-- BEGIN product-image -->
+                                    <div class="product-image">
+                                        <!-- BEGIN product-main-image -->
+                                        <div class="product-main-image"
+                                             data-id="main-image">
+                                            <img src="{{ page.image_main }}"
+                                                 alt="" />
+                                        </div>
+                                        <!-- END product-main-image -->
+                                    </div>
+                                    <!-- END product-image -->
+                                    <!-- BEGIN product-info -->
+                                    <div class="product-info">
+                                        <!-- BEGIN product-info-header -->
+                                        <div class="product-info-header">
+                                            <h1 class="product-title">
+                                                {{ page.name }}
+                                            </h1>
+                                            <ul class="product-category">
+                                                {% for tag in page.tags %}
+                                                <a href="/{{ page.language }}/{{ tag }}">
+                                                    {{ site.data.translations[page.language][tag] }}
+                                                </a>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                        <!-- END product-info-header -->
+                                        <!-- BEGIN product-warranty -->
+                                        <div class="product-warranty">
+                                            <div class="pull-right">
+                                                {{ page.description }}
+                                            </div>
+                                        </div>
+                                        <!-- END product-warranty -->
+                                    </div>
+                                    <!-- END product-info -->
+                                </div>
+                                <!-- END product-detail -->
+                            </div>
+                            <!-- END product -->
+                        </div>
+                        <!-- END search-item-container -->
+                    </div>
+                    <!-- END search-content -->
+                </div>
+                <!-- END search-container -->
+            </div>
+            <!-- END container -->
+        </div>
+        <!-- END search-results -->

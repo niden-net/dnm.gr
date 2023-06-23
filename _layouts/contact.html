@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+        <!-- BEGIN #product -->
+        <div id="product" class="section-container pt-20px">
+            <!-- BEGIN container -->
+            <div class="container">
+                <!-- BEGIN row -->
+                <div class="row row-space-30">
+                    <!-- BEGIN col-8 -->
+                    <div class="col-md-8">
+                        <p class="mb-30px fs-13px">
+                            {{ site.data.translations[page.language].contact_description }}
+                        </p>
+                        <form class="form-horizontal"
+                              name="contact_us_form"
+                              action="contact_us.html"
+                              method="GET">
+                            <div class="mb-2 row">
+                                <label class="col-form-label col-md-3 text-lg-end">
+                                    {{ site.data.translations[page.language].contact_form_name }} <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <input type="text"
+                                           class="form-control"
+                                           name="name"/>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <label class="col-form-label col-md-3 text-lg-end">
+                                    {{ site.data.translations[page.language].contact_form_email }} <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <input type="text"
+                                           class="form-control"
+                                           name="email"/>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <label class="col-form-label col-md-3 text-lg-end">
+                                    {{ site.data.translations[page.language].contact_form_subject }} <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <input type="text"
+                                           class="form-control"
+                                           name="subject"/>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <label class="col-form-label col-md-3 text-lg-end">
+                                    {{ site.data.translations[page.language].contact_form_message }} <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control"
+                                              rows="10"
+                                              name="message"></textarea>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <label class="col-form-label col-md-3"></label>
+                                <div class="col-md-7">
+                                    <button type="submit"
+                                            class="btn btn-dark btn-theme">
+                                        {{ site.data.translations[page.language].contact_form_send }}
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- END col-8 -->
+                    <!-- BEGIN col-4 -->
+                    <div class="col-md-4">
+                        <div class="ratio ratio-16x9 mb-15px">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1514.507413350346!2d22.99638866175574!3d40.60749651876688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a8389f1efe0f37%3A0xd36dd110de61bfc3!2zRE5NLCDOoC4gzqDOkc6gzpHOk86ZzpHOnc6dzpfOoyAmIM6jzpnOkSDOlS7OlS4sIM6SzpnOn86kzpXOp86dzpnOkSDOps6VzqHOnM6fzqXOkc6h!5e0!3m2!1sen!2sus!4v1687532111026!5m2!1sen!2sus"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div><b>DNM</b></div>
+                        <p class="mb-15px">
+                            {{ site.data.translations[page.language].contact_address_street }}<br>
+                            {{ site.data.translations[page.language].contact_address_zip }}<br>
+                            {{ site.data.translations[page.language].contact_address_city }}<br>
+                            {{ site.data.translations[page.language].contact_address_country }}<br>
+                            {{ site.data.translations[page.language].contact_phone }}<br>
+                            {{ site.data.translations[page.language].contact_fax }}<br>
+                        </p>
+                        <div><b>Email</b></div>
+                        <p class="mb-15px">
+                            <a href="mailto:{{ site.data.translations[page.language].email }}"
+                               class="text-dark">
+                                {{ site.data.translations[page.language].email }}
+                            </a>
+                            <br/>
+                        </p>
+                    </div>
+                    <!-- END col-4 -->
+                </div>
+                <!-- END row -->
+            </div>
+            <!-- END row -->
+        </div>
+        <!-- END #product -->
