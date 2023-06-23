@@ -17,24 +17,12 @@ layout: default
                             <div class="row">
                                 <div class="col-lg-6">
                                     <h4>
-                                        <a href="/{{ page.language }}/{{ page.category }}"
+                                        {% for tag in page.tags %}
+                                        <a href="/{{ page.language }}/{{ tag }}"
                                            class="btn btn-warning btn-sm">
-                                            {{ page.category | capitalize }}
+                                            {{ site.data.translations[page.language][tag] }}
                                         </a>
-                                        {% if page.type != 'none' %}
-                                        /
-                                        <a href="/{{ page.language}}/{{ page.category }}/{{ page.type }}"
-                                           class="btn btn-warning btn-sm">
-                                            {{ page.type | capitalize }}
-                                        </a>
-                                        {% endif %}
-                                        {% if page.tag != 'none' %}
-                                        /
-                                        <a href="/{{ page.language}}/{{ page.category }}/{{ page.type }}/{{ page.tag }}"
-                                           class="btn btn-warning btn-sm">
-                                            {{ page.tag | capitalize }}
-                                        </a>
-                                        {% endif %}
+                                        {% endfor %}
                                     </h4>
                                 </div>
                                 <!-- END col-6 -->

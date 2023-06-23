@@ -45,32 +45,32 @@
                                 <div class="dropdown-menu"
                                      aria-labelledby="dropdownMenuButton">
                                     {% assign submenu = menu.children %}
-                                    {% for submenu in submenu %}
-                                    {% if submenu.children %}
+                                    {% for sub in submenu %}
+                                    {% if sub.children %}
                                     <div class="dropdown dropend">
                                         <a class="dropdown-item dropdown-toggle"
-                                           href="/{{ page.language }}/{{ submenu.url }}"
+                                           href="/{{ page.language }}/{{ sub.url }}"
                                            data-bs-toggle="dropdown"
                                            aria-haspopup="true"
                                            aria-expanded="false">
-                                            {{ site.data.translations[page.language][submenu.name] }}
+                                            {{ site.data.translations[page.language][sub.name] }}
                                              <i class="fa fa-fw fa-angle-right text-muted"></i>
                                         </a>
                                         <div class="dropdown-menu"
                                              aria-labelledby="dropdown-layouts">
-                                            {% assign subsubmenu = submenu.children %}
-                                            {% for subsubmenu in subsubmenu %}
+                                            {% assign subsubmenu = sub.children %}
+                                            {% for subsub in subsubmenu %}
                                             <a class="dropdown-item"
-                                               href="/{{ page.language }}/{{ subsubmenu.url }}">
-                                                {{ site.data.translations[page.language][subsubmenu.name] }}
+                                               href="/{{ page.language }}/{{ subsub.url }}">
+                                                {{ site.data.translations[page.language][subsub.name] }}
                                             </a>
                                             {% endfor %}
                                         </div>
                                     </div>
                                     {% else %}
                                     <a class="dropdown-item"
-                                       href="/{{ page.language }}/{{ submenu.name }}">
-                                        {{ site.data.translations[page.language][submenu.name] }}
+                                       href="/{{ page.language }}/{{ sub.name }}">
+                                        {{ site.data.translations[page.language][sub.name] }}
                                     </a>
                                     {% endif %}
                                     {% endfor %}

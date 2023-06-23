@@ -3,19 +3,45 @@
 
                     <!-- BEGIN search-sidebar -->
                     <div class="search-sidebar">
-                        <h4 class="title mb-0">
-                            {{ site.data.translations[page.language].categories }}
-                        </h4>
                         <ul class="search-category-list">
-                            {% for category in sideCategories %}
-                            {% assign catName = category[0] %}
-                            {% assign catPosts = langPosts | where: "category", catName %}
+                            {% for menu in site.data.menu %}
+                            {% if menu.url == 'zippers' or menu.url == 'drivers' %}
+                            {% assign numPosts = langPosts | where: "tags", menu.url %}
                             <li>
-                                <a href="/{{ page.language }}/{{ category[0] }}">
-                                    {{ site.data.translations[page.language][catName] }}
-                                    <span class="pull-right">({{ catPosts | size }})</span>
+                                <a href="/{{ page.language }}/{{ menu.url }}">
+                                    {{ site.data.translations[page.language][menu.name] }}
+                                    <span class="pull-right">({{ numPosts | size }})</span>
                                 </a>
+                                {% if menu.children %}
+                                <ul>
+                                    {% assign submenu = menu.children %}
+                                    {% for sub in submenu %}
+                                    {% assign numPosts = langPosts | where: "tags", sub.url %}
+                                    <li>
+                                        <a href="/{{ page.language }}/{{ sub.url }}">
+                                            {{ site.data.translations[page.language][sub.name] }}
+                                            <span class="pull-right">({{ numPosts | size }})</span>
+                                        </a>
+                                        {% if sub.children %}
+                                        <ul>
+                                            {% assign subsubmenu = sub.children %}
+                                            {% for subsub in subsubmenu %}
+                                            {% assign numPosts = langPosts | where: "tags", subsub.url %}
+                                            <li>
+                                                <a href="/{{ page.language }}/{{ subsub.url }}">
+                                                    {{ site.data.translations[page.language][subsub.name] }}
+                                                    <span class="pull-right">({{ numPosts | size }})</span>
+                                                </a>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                        {% endif %}
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
                             </li>
+                            {% endif %}
                             {% endfor %}
                         </ul>
                     </div>
