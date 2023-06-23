@@ -58,24 +58,27 @@
           url: drivers-spiral-no5
         - name: menu_drivers_spiral_no10
           url: drivers-spiral-no10
-    - name: menu_drivers_bone
-      url: drivers/bone
+#    - name: menu_drivers_bone
+#      url: drivers/bone
     - name: menu_drivers_aluminium_nickel
-      url: drivers/aluminium-nickel
+      url: drivers-metal-aluminium-nickel
       children:
         - name: menu_drivers_aluminium-nickel_no5
-          url: drivers/aluminium-nickel/no5
-        - name: menu_drivers_aluminium-nickel_no8
-          url: drivers/aluminium-nickel/no8
+          url: drivers-metal-aluminium-nickel-no5
+#        - name: menu_drivers_aluminium-nickel_no8
+#          url: drivers-metal-aluminium-nickel-no8
     - name: menu_drivers_gold
-      url: drivers/gold
+      url: drivers-metal-gold
+      children:
+        - name: menu_drivers_gold_no5
+          url: drivers-metal-gold-no5
     - name: menu_drivers_bronze
-      url: drivers/bronze
+      url: drivers-metal-bronze
       children:
         - name: menu_drivers_bronze_no5
-          url: drivers/bronze/no5
-        - name: menu_drivers_bronze_no8
-          url: drivers/bronze/no8
+          url: drivers-metal-bronze-no5
+#        - name: menu_drivers_bronze_no8
+#          url: drivers-metal-bronze-no8
     - name: menu_drivers_black_nickel
       url: drivers/black-nickel
       children:
