@@ -5,6 +5,20 @@ backend:
 publish_mode: 'editorial_workflow'
 media_folder: 'assets/img'  # Media files will be stored in the repo under assets/files
 
+i18n:
+  # Required and can be one of multiple_folders, multiple_files or single_file
+  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+  structure: multiple_folders
+
+  # Required - a list of locales to show in the editor UI
+  locales: [el, en]
+
+  # Optional, defaults to the first item in locales.
+  # The locale to be used for fields validation and as a baseline for the entry.
+  default_locale: el
+
 collections:
   - name: "el"
     label: "Posts Greek"
@@ -36,15 +50,15 @@ collections:
     label: "Translations"
     i18n:
       structure: single_file
-      locales: [en, el]
+      locales: [el, en]
     files:
       - name: translation_strings
         label: Translation Strings
         file: _data/translations2.yml
         i18n: true
         fields:
-          - {label: Label, name: label, widget: string}
-          - {label: Value, name: value, widget: string}
+          - {label: Label, name: label, widget: string, i18n: true}
+          - {label: Value, name: value, widget: string, i18n: true}
 
 
 #
