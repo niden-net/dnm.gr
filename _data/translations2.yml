@@ -1,18 +1,434 @@
-el:
-  label: el label
-  value: el val
-  object:
-    date: 2023-06-24T14:42:19.528Z
-    string: aaaaa
-    boolean: true
-    object:
-      string: ccccc
 en:
-  label: en label
-  value: en val
-  object:
-    date: 2023-06-24T14:42:19.528Z
-    boolean: true
-    object:
-      string: ccccc
-    string: bbbbb
+  - label: title
+    value: "Home - DNM"
+  - label: description
+    value: "DNM Company was founded in 1986 by Dimitrios Papagiannis. Very soon it took over a major role in the market, since it stood out for its construction quality and its friendly approach against customers and suppliers. The evolution, innovation and inexhaustible passion made DNM one of the most reliable companies in its field.[...]"
+  - label: email
+    value: "info@dnm.gr"
+  - label: contact_description
+    value: "You can contact us by filling out the form below or by calling us at the phone numbers listed below the map."
+  - label: contact_form_name
+    value: "Name"
+  - label: contact_form_email
+    value: "Email"
+  - label: contact_form_subject
+    value: "Subject"
+  - label: contact_form_message
+    value: "Message"
+  - label: contact_form_send
+    value: "SEND MESSAGE"
+  - label: contact_address_street
+    value: "17th November 81"
+  - label: contact_address_zip
+    value: "55535 Pilaia"
+  - label: contact_address_city
+    value: "Thessaloniki"
+  - label: contact_address_country
+    value: "Greece"
+  - label: contact_phone
+    value: "T: 2310 935176, 2310 938797"
+  - label: contact_fax
+    value: "F: 2310 905132"
+  - label: contact_email
+    value: "E: <a href='mailto:info@dnm.gr'>info@dnm.gr</a>"
+  - label: copyright
+    value: "Copyright &copy; DNM 2014-Present"
+  - label: content_index_1
+    value: "DNM Company was founded in 1986 by Dimitrios Papagiannis. Very soon it took over a major role in the market, since it stood out for its construction quality and its friendly approach against customers and suppliers. The evolution, innovation and inexhaustible passion made DNM one of the most reliable companies in its field. Combined with its authentic Greek identity it evolved in one of the leaders in the domestic zipper production, and self-ligating film marketing."
+  - label: content_index_2
+    value: "The development of DNM is a result of continuous modernization and investment in skilled personnel. The company’s philosophy is and will always be, the perfectionism of product quality. As a consequence expectations are rising! So today, it reaches the goal of full vertical integration of production, while its modern production lines ensure flexibility, economy and promptness of delivery, since the daily zipper output reaches the number of 30.000!"
+  - label: content_index_3
+    value: "Get to know the grate range of DNM products, the irresistible prices and find out for yourselves the difference in the communication code and deadlines."
+  - label: menu_homepage
+    value: "HOME"
+  - label: menu_zippers
+    value: "ZIPPERS"
+  - label: menu_zippers_nylon
+    value: "NYLON"
+  - label: menu_zippers_nylon_no3
+    value: "No3"
+  - label: menu_zippers_nylon_no5
+    value: "No5"
+  - label: menu_zippers_nylon_no10
+    value: "No10"
+  - label: menu_zippers_bone
+    value: "BONE"
+  - label: menu_zippers_bone_no3
+    value: "No3"
+  - label: menu_zippers_bone_no5
+    value: "No5"
+  - label: menu_zippers_bone_no8
+    value: "No8"
+  - label: menu_zippers_metal
+    value: "METAL"
+  - label: menu_zippers_metal_gold
+    value: "GOLD"
+  - label: menu_zippers_metal_black_nickel
+    value: "BLACK NICKEL"
+  - label: menu_zippers_metal_aluminium_nickel
+    value: "ALUMINIUM NICKEL"
+  - label: menu_zippers_metal_bronze
+    value: "BRONZE"
+  - label: menu_zippers_special
+    value: "SPECIAL"
+  - label: menu_zippers_special_spiral
+    value: "SPIRAL"
+  - label: menu_zippers_special_bone
+    value: "BONE"
+  - label: menu_zippers_special_metal
+    value: "METAL"
+  - label: menu_zippers_tape
+    value: "TAPES"
+  - label: menu_zippers_tape_no3
+    value: "No3"
+  - label: menu_zippers_tape_no5
+    value: "No5"
+  - label: menu_zippers_tape_no10
+    value: "No10"
+  - label: menu_drivers
+    value: "DRIVERS"
+  - label: menu_drivers_spiral
+    value: "SPIRAL"
+  - label: menu_drivers_spiral_no3
+    value: "No3"
+  - label: menu_drivers_spiral_no4
+    value: "No4"
+  - label: menu_drivers_spiral_no5
+    value: "No5"
+  - label: menu_drivers_spiral_no10
+    value: "No10"
+  - label: menu_drivers_bone
+    value: "BONE"
+  - label: menu_drivers_aluminium_nickel
+    value: "ALUMINIUM NICKEL"
+  - label: menu_drivers_aluminium-nickel_no5
+    value: "No5"
+  - label: menu_drivers_aluminium-nickel_no8
+    value: "No8"
+  - label: menu_drivers_gold
+    value: "GOLD"
+  - label: menu_drivers_gold_no5
+    value: "No5"
+  - label: menu_drivers_bronze
+    value: "BRONZE"
+  - label: menu_drivers_bronze_no5
+    value: "No5"
+  - label: menu_drivers_bronze_no8
+    value: "No8"
+  - label: menu_drivers_black_nickel
+    value: "BLACK NICKEL"
+  - label: menu_drivers_black-nickel_no5
+    value: "No5"
+  - label: menu_drivers_black-nickel_no8
+    value: "No8"
+  - label: menu_drivers_puller
+    value: "PULLER"
+  - label: menu_drivers_special
+    value: "SPECIAL"
+  - label: menu_velcro
+    value: "VELCRO"
+  - label: menu_contact
+    value: "CONTACT"
+  - label: categories
+    value: "Categories"
+  - label: drivers
+    value: "Drivers"
+  - label: drivers-special-brand
+    value: "Special"
+  - label: drivers-spiral
+    value: "Spiral"
+  - label: drivers-spiral-no5
+    value: "Spiral No5"
+  - label: drivers-spiral-no10
+    value: "Spiral No10"
+  - label: drivers-metal
+    value: "Metal"
+  - label: zippers-metal-no5
+    value: "Metal No5"
+  - label: drivers-metal-aluminium-nickel
+    value: "Metal Aluminium Nickel"
+  - label: drivers-metal-aluminium-nickel-no5
+    value: "Metal Aluminium Nickel No5"
+  - label: drivers-metal-black-nickel
+    value: "Metal Black Nickel"
+  - label: drivers-metal-black-nickel-no5
+    value: "Metal Black Nickel No5"
+  - label: drivers-metal-gold
+    value: "Metal Gold"
+  - label: drivers-metal-gold-no5
+    value: "Metal Gold No5"
+  - label: drivers-metal-bronze
+    value: "Metal Bronze"
+  - label: drivers-metal-bronze-no5
+    value: "Metal Bronze No5"
+  - label: zippers
+    value: "Zippers"
+  - label: zippers-nylon
+    value: "Nylon"
+  - label: zippers-nylon-no3
+    value: "Nylon No3"
+  - label: zippers-nylon-no5
+    value: "Nylon No5"
+  - label: zippers-bone
+    value: "Bone"
+  - label: zippers-bone-no3
+    value: "Bone No3"
+  - label: zippers-bone-no5
+    value: "Bone No5"
+  - label: zippers-bone-no8
+    value: "Bone No8"
+  - label: zippers-metal
+    value: "Metal"
+  - label: zippers-metal-gold
+    value: "Metal Gold"
+  - label: zippers-metal-gold-no5
+    value: "Metal Gold No5"
+  - label: zippers-metal-aluminium-nickel
+    value: "Metal Aluminium Nickel"
+  - label: zippers-metal-aluminium-nickel-no5
+    value: "Metal Aluminium Nickel No5"
+  - label: zippers-metal-black-nickel
+    value: "Metal Black Nickel"
+  - label: zippers-metal-black-nickel-no5
+    value: "Metal Black Nickel No5"
+  - label: zippers-metal-bronze
+    value: "Metal Bronze"
+  - label: zippers-metal-bronze-no5
+    value: "Metal Bronze No5"
+  - label: zippers-special
+    value: "Special"
+  - label: zippers-special-spiral
+    value: "Spiral"
+  - label: zippers-special-bone
+    value: "Special Bone"
+  - label: zippers-special-bone-no5
+    value: "Special Bone No5"
+  - label: zippers-special-bone-no8
+    value: "Special Bone No8"
+  - label: zippers-special-metal
+    value: "Special Metal"
+  - label: zippers-tape
+    value: "Tape"
+  - label: zippers-tape-bone
+    value: "Tape Bone"
+  - label: zippers-tape-no5
+    value: "Tape Bone No5"
+  - label: products
+    value: "products"
+el:
+  - label: title
+    value: "Αρχική - DNM"
+  - label: description
+    value: "Η εταιρία DNM ιδρύθηκε το 1986 από τον Δημήτριο Παπαγιάννη. Πολύ γρήγορα κατέκτησε ένα σημαντικό κομμάτι της αγοράς, αφού ξεχώρισε για τη ποιότητα κατασκευής και το ανθρώπινο πρόσωπο απέναντι σε πελάτες και προμηθευτές. Η εξέλιξη, η καινοτομία και το ανεξάντλητο μεράκι, κατέστησαν την DNM μια από τις πλέον αξιόπιστες εταιρίες [...]"
+  - label: email
+    value: "info@dnm.gr"
+  - label: contact_description
+    value: "You can contact us by filling out the form below or by calling us at the phone numbers listed below the map."
+  - label: contact_form_name
+    value: "Όνομα"
+  - label: contact_form_email
+    value: "Email"
+  - label: contact_form_subject
+    value: "Θέμα"
+  - label: contact_form_message
+    value: "Μήνυμα"
+  - label: contact_form_send
+    value: "ΑΠΟΣΤΟΛΗ"
+  - label: contact_address_street
+    value: "17ης Νοεμβρίου 81"
+  - label: contact_address_zip
+    value: "55535 Πυλαία"
+  - label: contact_address_city
+    value: "Θεσσαλονίκη"
+  - label: contact_address_country
+    value: "Ελλάς"
+  - label: contact_phone
+    value: "T: 2310 935176, 2310 938797"
+  - label: contact_fax
+    value: "Φ: 2310 905132"
+  - label: contact_email
+    value: "E: <a href='mailto:info@dnm.gr'>info@dnm.gr"
+  - label: copyright
+    value: "Copyright &copy; DNM 2014-Present"
+  - label: content_index_1
+    value: "Η εταιρία DNM ιδρύθηκε το 1986 από τον Δημήτριο Παπαγιάννη. Πολύ γρήγορα κατέκτησε ένα σημαντικό κομμάτι της αγοράς, αφού ξεχώρισε για τη ποιότητα κατασκευής και το ανθρώπινο πρόσωπο απέναντι σε πελάτες και προμηθευτές. Η εξέλιξη, η καινοτομία και το ανεξάντλητο μεράκι, κατέστησαν την DNM μια από τις πλέον αξιόπιστες εταιρίες του χώρου, που σε συνάρτηση με την αμιγώς ελληνική της ταυτότητα, αποτέλεσε και αποτελεί έναν από τους leaders στην εγχώρια παραγωγή φερμουάρ, καθώς και στην εμπορία αυτοδέτων ταινιών."
+  - label: content_index_2
+    value: "Η ανάπτυξη της DNM είναι αποτέλεσμα συνεχούς εκσυγχρονισμού και επένδυσης σε εξειδικευμένο ανθρώπινο δυναμικό. Η φιλοσοφία της εταιρίας είναι και θα είναι πάντα, η τελειοποίηση της ποιότητας των προϊόντων της. Αυτό έχει σαν συνέπεια, να ανεβαίνει ολοένα πιο ψηλά ο πήχυς των απαιτήσεων! Έτσι σήμερα αγγίζει τον στόχο της πλήρους καθετοποίησης της παραγωγής, ενώ οι σύγχρονες γραμμές παραγωγής, εξασφαλίζουν ευελιξία, οικονομία και αμεσότητα παράδοσης, αφού η ημερήσια παραγωγή φερμουάρ φτάνει στις 30.000!"
+  - label: content_index_3
+    value: "Γνωρίστε λοιπόν κι εσείς την μεγάλη γκάμα προϊόντων DNM, μάθετε τις ασυναγώνιστες τιμές και δείτε μόνοι σας τη διαφορά στον κώδικα επικοινωνίας και στους χρόνους."
+  - label: menu_homepage
+    value: "ΑΡΧΙΚΗ"
+  - label: menu_zippers
+    value: "ΦΕΡΜΟΥΑΡ"
+  - label: menu_zippers_nylon
+    value: "NYLON"
+  - label: menu_zippers_nylon_no3
+    value: "No3"
+  - label: menu_zippers_nylon_no5
+    value: "No5"
+  - label: menu_zippers_nylon_no10
+    value: "No10"
+  - label: menu_zippers_bone
+    value: "ΚΟΚΑΛΛΙΝΑ"
+  - label: menu_zippers_bone_no3
+    value: "No3"
+  - label: menu_zippers_bone_no5
+    value: "No5"
+  - label: menu_zippers_bone_no8
+    value: "No8"
+  - label: menu_zippers_metal
+    value: "ΜΕΤΑΛΛΙΚΑ"
+  - label: menu_zippers_metal_gold
+    value: "ΧΡΥΣΟ"
+  - label: menu_zippers_metal_black_nickel
+    value: "ΜΑΥΡΟ ΝΙΚΕΛ"
+  - label: menu_zippers_metal_aluminium_nickel
+    value: "ΝΙΚΕΛ ΑΛΟΥΜΙΝΙΟΥ"
+  - label: menu_zippers_metal_bronze
+    value: "ΜΠΡΟΝΖΕ"
+  - label: menu_zippers_special
+    value: "ΕΙΔΙΚΑ"
+  - label: menu_zippers_special_spiral
+    value: "ΣΠΙΡΑΛ"
+  - label: menu_zippers_special_bone
+    value: "ΚΟΚΑΛΛΙΝΑ"
+  - label: menu_zippers_special_metal
+    value: "ΜΕΤΑΛΛΙΚΑ"
+  - label: menu_zippers_tape
+    value: "ΤΑΙΝΕΙΕΣ"
+  - label: menu_zippers_tape_no3
+    value: "No3"
+  - label: menu_zippers_tape_no5
+    value: "No5"
+  - label: menu_zippers_tape_no10
+    value: "No10"
+  - label: menu_drivers
+    value: "ΟΔΗΓΟΙ"
+  - label: menu_drivers_spiral
+    value: "ΣΠΙΡΑΛ"
+  - label: menu_drivers_spiral_no3
+    value: "No3"
+  - label: menu_drivers_spiral_no4
+    value: "No4"
+  - label: menu_drivers_spiral_no5
+    value: "No5"
+  - label: menu_drivers_spiral_no10
+    value: "No10"
+  - label: menu_drivers_bone
+    value: "ΚΟΚΑΛΛΙΝΟΙ"
+  - label: menu_drivers_aluminium_nickel
+    value: "ΝΙΚΕΛ ΑΛΟΥΜΙΝΙΟΥ"
+  - label: menu_drivers_aluminium-nickel_no5
+    value: "No5"
+  - label: menu_drivers_aluminium-nickel_no8
+    value: "No8"
+  - label: menu_drivers_gold
+    value: "ΧΡΥΣΟΙ"
+  - label: menu_drivers_gold_no5
+    value: "No5"
+  - label: menu_drivers_bronze
+    value: "ΜΠΡΟΝΖΕ"
+  - label: menu_drivers_bronze_no5
+    value: "No5"
+  - label: menu_drivers_bronze_no8
+    value: "No8"
+  - label: menu_drivers_black_nickel
+    value: "ΜΑΥΡΟ ΝΙΚΕΛ"
+  - label: menu_drivers_black-nickel_no5
+    value: "No5"
+  - label: menu_drivers_black-nickel_no8
+    value: "No8"
+  - label: menu_drivers_puller
+    value: "PULLER"
+  - label: menu_drivers_special
+    value: "ΕΙΔΙΚΟΙ"
+  - label: menu_velcro
+    value: "VELCRO"
+  - label: menu_contact
+    value: "ΕΠΙΚΟΙΝΩΝΙΑ"
+  - label: categories
+    value: "Κατηγορίες"
+  - label: drivers
+    value: "Οδηγοί"
+  - label: drivers-metal
+    value: "Metal"
+  - label: drivers-metal-aluminium-nickel
+    value: "Νικέλ Αλουμινίου"
+  - label: drivers-metal-aluminium-nickel-no5
+    value: "No5"
+  - label: drivers-metal-black-nickel
+    value: "Μαύρο Νικέλ"
+  - label: drivers-metal-black-nickel-no5
+    value: "No5"
+  - label: drivers-metal-gold
+    value: "Χρυσοί"
+  - label: drivers-metal-gold-no5
+    value: "No5"
+  - label: drivers-metal-bronze
+    value: "Μπρονζέ"
+  - label: drivers-metal-bronze-no5
+    value: "No5"
+  - label: drivers-special-brand
+    value: "Special"
+  - label: drivers-spiral
+    value: "Σπιράλ"
+  - label: drivers-spiral-no5
+    value: "No5"
+  - label: drivers-spiral-no10
+    value: "No10"
+  - label: zippers
+    value: "Φερμουάρ"
+  - label: zippers-nylon
+    value: "Nylon"
+  - label: zippers-nylon-no3
+    value: "No3"
+  - label: zippers-nylon-no5
+    value: "No5"
+  - label: zippers-bone
+    value: "Κοκάλλινα"
+  - label: zippers-bone-no3
+    value: "No3"
+  - label: zippers-bone-no5
+    value: "No5"
+  - label: zippers-bone-no8
+    value: "No8"
+  - label: zippers-metal
+    value: "Μεταλλικά"
+  - label: zippers-metal-no5
+    value: "No5"
+  - label: zippers-metal-gold
+    value: "Χρυσά"
+  - label: zippers-metal-gold-no5
+    value: "No5"
+  - label: zippers-metal-aluminium-nickel
+    value: "Νικέλ Αλουμινίου"
+  - label: zippers-metal-aluminium-nickel-no5
+    value: "No5"
+  - label: zippers-metal-black-nickel
+    value: "Μαύρο Νικέλ"
+  - label: zippers-metal-black-nickel-no5
+    value: "No5"
+  - label: zippers-metal-bronze
+    value: "Μπρονζέ"
+  - label: zippers-metal-bronze-no5
+    value: "No5"
+  - label: zippers-special
+    value: "Ειδικά"
+  - label: zippers-special-spiral
+    value: "Σπιράλ"
+  - label: zippers-special-bone
+    value: "Κοκάλλινα"
+  - label: zippers-special-bone-no5
+    value: "No5"
+  - label: zippers-special-bone-no8
+    value: "No8"
+  - label: zippers-special-metal
+    value: "Μεταλλικά"
+  - label: zippers-tape
+    value: "Ταινίες"
+  - label: zippers-tape-bone
+    value: "Κοκάλλινες"
+  - label: zippers-tape-no5
+    value: "No5"
+  - label: products
+    value: "προιόντα"
