@@ -5,9 +5,13 @@ kramdown:
 
 permalink: /:categories/:title/
 
-#collections:
-#  products:
-#    permalink: /products/:title/
+collections:
+  en:
+    output: true
+    permalink: /:collection/:slug
+  el:
+    output: true
+    permalink: /:collection/:slug
 
 defaults:
   - scope:
@@ -16,12 +20,14 @@ defaults:
     values:
       permalink: 'en/:categories/:title'
       language: en
+      layout: detail
   - scope:
       path: '_posts/el'
       type: 'posts'
     values:
       permalink: 'el/:categories/:title'
       language: el
+      layout: detail
 
 include:
   - _posts

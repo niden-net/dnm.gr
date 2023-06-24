@@ -26,26 +26,58 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
-      - {label: "Language", name: "language", widget: "hidden", default: "el"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Image", name: "image_main", widget: "image"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden",
+        default: "product"
+      - label: "Language"
+        name: "language"
+        widget: "hidden"
+        default: "el"
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Image"
+        name: "image_main"
+        widget: "image"
+      - label: "Category"
+        name: "category"
+        widget: "string"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
   - name: "en"
     label: "Posts English"
     folder: "_posts/en"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
-      - {label: "Language", name: "language", widget: "hidden", default: "en"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Image", name: "image_main", widget: "image"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "product"
+      - label: "Language"
+        name: "language"
+        widget: "hidden"
+        default: "en"
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Image"
+        name: "image_main"
+        widget: "image"
+      - label: "Category"
+        name: "category"
+        widget: "string"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
   - name: "translations"
     label: "Translations"
     i18n:
@@ -57,10 +89,32 @@ collections:
         file: _data/translations2.yml
         i18n: true
         fields:
-          - {label: Label, name: label, widget: string, i18n: true}
-          - {label: Value, name: value, widget: string, i18n: true}
-
-
+          - label: Label
+            name: label
+            widget: string
+            i18n: true
+          - label: Value
+            name: value
+            widget: string
+            i18n: true
+          - label: 'Object'
+            name: 'object'
+            widget: 'object'
+            i18n: true
+            fields:
+              - label: 'String'
+                name: 'string'
+                widget: 'string'
+                i18n: true
+              - label: 'Object'
+                name: 'object'
+                widget: 'object'
+                i18n: true
+                field:
+                  - label: 'String'
+                    name: 'string'
+                    widget: 'string'
+                    i18n: duplicate
 #
 #i18n:
 #  # Required and can be one of multiple_folders, multiple_files or single_file
