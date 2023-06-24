@@ -49,11 +49,11 @@ collections:
 
 
   - name: posts
-    label: "Test Posts}"
-    folder: "_posts"
+    label: "Test Posts"
+    folder: "_posts2"
     create: true
     i18n: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
       - label: "Layout"
         name: "layout"
@@ -69,7 +69,12 @@ collections:
         i18n: duplicate
       - label: "Category"
         name: "category"
-        widget: "string"
+        widget: "select"
+        options:
+          - label: "Drivers"
+            value: "drivers"
+          - label: "Zippers"
+            value: "zippers"
         i18n: duplicate
       - label: "Tags"
         name: "tags"
