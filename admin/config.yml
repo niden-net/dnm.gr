@@ -10,7 +10,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_folders
+  structure: single_file
 
   # Required - a list of locales to show in the editor UI
   locales: [el, en]
@@ -52,9 +52,7 @@ collections:
     label: "Test Posts"
     folder: "_posts2"
     create: true
-    i18n:
-      - structure: single_file
-        locales: [el, en]
+    i18n: true
     identifier_field: name
     slug: "{{year}}-{{month}}-{{day}}-{{name}}"
     fields:
