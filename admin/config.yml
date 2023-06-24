@@ -52,8 +52,8 @@ collections:
     label: "Test Posts"
     folder: "_posts2"
     create: true
-    identifier_field: name
     i18n: true
+    identifier_field: name
     slug: "{{year}}-{{month}}-{{day}}-{{name}}"
     fields:
       - label: "Layout"
@@ -67,7 +67,6 @@ collections:
       - label: "Image"
         name: "image_main"
         widget: "image"
-        i18n: duplicate
       - label: "Category"
         name: "category"
         widget: "select"
@@ -76,11 +75,9 @@ collections:
             value: "drivers"
           - label: "Zippers"
             value: "zippers"
-        i18n: duplicate
       - label: "Tags"
         name: "tags"
         widget: "list"
-        i18n: duplicate
       - label: "Description"
         name: "description"
         widget: "markdown"
