@@ -5,68 +5,111 @@ backend:
 publish_mode: 'editorial_workflow'
 media_folder: 'assets/img'  # Media files will be stored in the repo under assets/files
 
-i18n:
-  # Required and can be one of multiple_folders, multiple_files or single_file
-  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: multiple_files
-
-  # Required - a list of locales to show in the editor UI
-  locales: [en, el]
-
-  # Optional, defaults to the first item in locales.
-  # The locale to be used for fields validation and as a baseline for the entry.
-  default_locale: en
-
-
 collections:
-  - name: products
-    label: Products
-    folder: _products
-    sort: name
+  - name: "el"
+    label: "Posts Greek"
+    folder: "_posts/el"
     create: true
-    identifier_field: name
-    slug: "{{name}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
+      - {label: "Language", name: "language", widget: "hidden", default: "el"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image_main", widget: "image"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Description", name: "description", widget: "markdown"}
+  - name: "en"
+    label: "Posts English"
+    folder: "_posts/en"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
+      - {label: "Language", name: "language", widget: "hidden", default: "en"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image_main", widget: "image"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Description", name: "description", widget: "markdown"}
+  - name: "translations"
+    label: "Translations"
     i18n:
       structure: single_file
       locales: [en, el]
-    fields:
-      - label: Name
-        name: name
-        widget: string
+    files:
+      - name: translation_strings
+        label: Translation Strings
+        file: _data/translations2.yml
         i18n: true
-      - label: Description
-        name: description
-        widget: string
-        i18n: true
-      - label: Thumbnail
-        name: image_150
-        widget: image
-        required: false
-      - label: Image 300
-        name: image_300
-        widget: image
-        required: false
-      - label: Main Image
-        name: main_image
-        widget: image
-        required: false
-      - label: Tags
-        name: tags
-        widget: list
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Value, name: value, widget: string}
 
 
-#  - name: setup
-#    label: Setup
-#    files:
-#      - file: _data/settings.yml
-#        label: All Items
-#        name: settings_items
-#        fields:
-#          - label: Settings
-#            name: settings_list
-#            widget: list
-#            fields:
-#              - {label: Label, name: label, widget: string}
-#              - {label: Value, name: value, widget: string}
+#
+#i18n:
+#  # Required and can be one of multiple_folders, multiple_files or single_file
+#  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+#  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+#  # single_file - persists a single file in `<folder>/<slug>.<extension>`
+#  structure: multiple_files
+#
+#  # Required - a list of locales to show in the editor UI
+#  locales: [en, el]
+#
+#  # Optional, defaults to the first item in locales.
+#  # The locale to be used for fields validation and as a baseline for the entry.
+#  default_locale: en
+#
+#
+#collections:
+#  - name: products
+#    label: Products
+#    folder: _products
+#    sort: name
+#    create: true
+#    identifier_field: name
+#    slug: "{{name}}"
+#    i18n:
+#      structure: single_file
+#      locales: [en, el]
+#    fields:
+#      - label: Name
+#        name: name
+#        widget: string
+#        i18n: true
+#      - label: Description
+#        name: description
+#        widget: string
+#        i18n: true
+#      - label: Thumbnail
+#        name: image_150
+#        widget: image
+#        required: false
+#      - label: Image 300
+#        name: image_300
+#        widget: image
+#        required: false
+#      - label: Main Image
+#        name: main_image
+#        widget: image
+#        required: false
+#      - label: Tags
+#        name: tags
+#        widget: list
+#
+#
+##  - name: setup
+##    label: Setup
+##    files:
+##      - file: _data/settings.yml
+##        label: All Items
+##        name: settings_items
+##        fields:
+##          - label: Settings
+##            name: settings_list
+##            widget: list
+##            fields:
+##              - {label: Label, name: label, widget: string}
+##              - {label: Value, name: value, widget: string}
