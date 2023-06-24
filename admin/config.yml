@@ -62,7 +62,7 @@ collections:
             label: Data
             widget: list
             fields:
-              - {label: Label, name: label, widget: string, i18n: true}
+              - {label: Name, name: name, widget: string, i18n: true}
               - {label: Value, name: value, widget: string, i18n: true}
 
 #i18n:
