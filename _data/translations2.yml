@@ -1,6 +1,18 @@
 el:
   label: el label
   value: el val
+  object:
+    date: 2023-06-24T14:42:19.528Z
+    string: aaaaa
+    boolean: true
+    object:
+      string: ccccc
 en:
   label: en label
   value: en val
+  object:
+    date: 2023-06-24T14:42:19.528Z
+    boolean: true
+    object:
+      string: ccccc
+    string: bbbbb
