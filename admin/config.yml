@@ -46,87 +46,22 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Description", name: "description", widget: "markdown"}
-  - name: "settings"
-    label: "Settings"
-    identifier_field: label
-    i18n:
-      structure: single_file
-      locales: [el, en]
-    files:
-      - name: "translations"
-        label: "Translations"
-        file: _data/translations2.yml
-        i18n: true
-        fields:
-          - name: data
-            label: Data
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string, i18n: true}
-              - {label: Value, name: value, widget: string, i18n: true}
-
-#i18n:
-#  # Required and can be one of multiple_folders, multiple_files or single_file
-#  # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
-#  # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
-#  # single_file - persists a single file in `<folder>/<slug>.<extension>`
-#  structure: multiple_files
-#
-#  # Required - a list of locales to show in the editor UI
-#  locales: [en, el]
-#
-#  # Optional, defaults to the first item in locales.
-#  # The locale to be used for fields validation and as a baseline for the entry.
-#  default_locale: en
-#
-#
-#collections:
-#  - name: products
-#    label: Products
-#    folder: _products
-#    sort: name
-#    create: true
-#    identifier_field: name
-#    slug: "{{name}}"
+#  - name: "settings"
+#    label: "Settings"
+#    identifier_field: label
 #    i18n:
 #      structure: single_file
-#      locales: [en, el]
-#    fields:
-#      - label: Name
-#        name: name
-#        widget: string
+#      locales: [el, en]
+#    files:
+#      - name: "translations"
+#        label: "Translations"
+#        file: _data/translations2.yml
 #        i18n: true
-#      - label: Description
-#        name: description
-#        widget: string
-#        i18n: true
-#      - label: Thumbnail
-#        name: image_150
-#        widget: image
-#        required: false
-#      - label: Image 300
-#        name: image_300
-#        widget: image
-#        required: false
-#      - label: Main Image
-#        name: main_image
-#        widget: image
-#        required: false
-#      - label: Tags
-#        name: tags
-#        widget: list
+#        fields:
+#          - name: data
+#            label: Data
+#            widget: list
+#            fields:
+#              - {label: Name, name: name, widget: string, i18n: true}
+#              - {label: Value, name: value, widget: string, i18n: true}
 #
-#
-##  - name: setup
-##    label: Setup
-##    files:
-##      - file: _data/settings.yml
-##        label: All Items
-##        name: settings_items
-##        fields:
-##          - label: Settings
-##            name: settings_list
-##            widget: list
-##            fields:
-##              - {label: Label, name: label, widget: string}
-##              - {label: Value, name: value, widget: string}
