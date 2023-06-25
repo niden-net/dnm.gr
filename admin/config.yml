@@ -10,7 +10,7 @@ i18n:
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
   # single_file - persists a single file in `<folder>/<slug>.<extension>`
-  structure: single_file
+  structure: multiple_files
 
   # Required - a list of locales to show in the editor UI
   locales: [el, en]
@@ -46,7 +46,6 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Description", name: "description", widget: "markdown"}
-
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
@@ -64,7 +63,9 @@ collections:
   - name: 'translations'
     label: 'Translations'
     delete: false # Prevent users from deleting documents in this collection
-    i18n: true
+    i18n:
+      structure: single_file
+      locales: [el, en]
     editor:
       preview: false
     files:
