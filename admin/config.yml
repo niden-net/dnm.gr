@@ -354,63 +354,63 @@ collections:
             widget: string
             i18n: true
           - name: sliders
-            label: "Drivers"
+            label: "Sliders"
             widget: string
             i18n: true
           - name: sliders-special-brand
-            label: "Drivers Special"
+            label: "Sliders Special"
             widget: string
             i18n: true
           - name: sliders-spiral
-            label: "Drivers Spiral"
+            label: "Sliders Spiral"
             widget: string
             i18n: true
           - name: sliders-spiral-no5
-            label: "Drivers Spiral No5"
+            label: "Sliders Spiral No5"
             widget: string
             i18n: true
           - name: sliders-spiral-no10
-            label: "Drivers Spiral No10"
+            label: "Sliders Spiral No10"
             widget: string
             i18n: true
           - name: sliders-metal
-            label: "Drivers Metal"
+            label: "Sliders Metal"
             widget: string
             i18n: true
           - name: zippers-metal-no5
-            label: "Drivers Metal No5"
+            label: "Sliders Metal No5"
             widget: string
             i18n: true
           - name: sliders-metal-aluminium-nickel
-            label: "Drivers Metal Aluminium Nickel"
+            label: "Sliders Metal Aluminium Nickel"
             widget: string
             i18n: true
           - name: sliders-metal-aluminium-nickel-no5
-            label: "Drivers Metal Aluminium Nickel No5"
+            label: "Sliders Metal Aluminium Nickel No5"
             widget: string
             i18n: true
           - name: sliders-metal-black-nickel
-            label: "Drivers Metal Black Nickel"
+            label: "Sliders Metal Black Nickel"
             widget: string
             i18n: true
           - name: sliders-metal-black-nickel-no5
-            label: "Drivers Metal Black Nickel No5"
+            label: "Sliders Metal Black Nickel No5"
             widget: string
             i18n: true
           - name: sliders-metal-gold
-            label: "Drivers Metal Gold"
+            label: "Sliders Metal Gold"
             widget: string
             i18n: true
           - name: sliders-metal-gold-no5
-            label: "Drivers Metal Gold No5"
+            label: "Sliders Metal Gold No5"
             widget: string
             i18n: true
           - name: sliders-metal-bronze
-            label: "Drivers Metal Bronze"
+            label: "Sliders Metal Bronze"
             widget: string
             i18n: true
           - name: sliders-metal-bronze-no5
-            label: "Drivers Metal Bronze No5"
+            label: "Sliders Metal Bronze No5"
             widget: string
             i18n: true
           - name: zippers
