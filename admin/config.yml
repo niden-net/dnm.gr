@@ -47,42 +47,30 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Description", name: "description", widget: "markdown"}
 
-#
-#  - name: posts
-#    label: "Test Posts"
-#    folder: "_posts2"
-#    create: true
-#    i18n: true
-#    identifier_field: name
-#    slug: "{{year}}-{{month}}-{{day}}-{{name}}"
-#    fields:
-#      - label: "Layout"
-#        name: "layout"
-#        widget: "hidden"
-#        default: "product"
-#      - label: "Name"
-#        name: "name"
-#        widget: "string"
-#        i18n: true
-#      - label: "Image"
-#        name: "image_main"
-#        widget: "image"
-#      - label: "Category"
-#        name: "category"
-#        widget: "select"
-#        options:
-#          - label: "Drivers"
-#            value: "drivers"
-#          - label: "Zippers"
-#            value: "zippers"
-#      - label: "Tags"
-#        name: "tags"
-#        widget: "list"
-#      - label: "Description"
-#        name: "description"
-#        widget: "markdown"
-#        i18n: true
-#
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: '_data/settings2.json'
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Google Analytics', name: 'google_analytics', widget: 'string' }
+          - { label: 'Cache Buster', name: 'asset_tag', widget: 'string' }
+      - name: 'translations'
+        label: 'Translations'
+        file: '_data/translations2.yml'
+        description: 'Site Translations'
+        fields:
+          - name: strings
+            label: Strings
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string'}
+              - { label: 'Description', name: 'description', widget: 'string' }
 
 
 
