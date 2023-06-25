@@ -35,8 +35,7 @@ layout: default
                                     <h4>
                                         {% for tag in tags %}
                                         <a href="/{{ page.language }}/{{ tag }}"
-                                           class="badge bg-warning"
-                                           style="margin-bottom: 5px;" >
+                                           class="badge bg-warning">
                                             {{ site.data.translations[page.language][tag] }}
                                         </a>&nbsp;
                                         {% endfor %}
