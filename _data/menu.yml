@@ -48,48 +48,48 @@
           url: zippers-tape-no5
 #        - name: menu_zippers_tape_no10
 #          url: zippers-tape-no10
-- name: menu_drivers
-  url: drivers
+- name: menu_sliders
+  url: sliders
   children:
-    - name: menu_drivers_spiral
-      url: drivers-spiral
+    - name: menu_sliders_spiral
+      url: sliders-spiral
       children:
-        - name: menu_drivers_spiral_no5
-          url: drivers-spiral-no5
-        - name: menu_drivers_spiral_no10
-          url: drivers-spiral-no10
-#    - name: menu_drivers_bone
-#      url: drivers/bone
-    - name: menu_drivers_aluminium_nickel
-      url: drivers-metal-aluminium-nickel
+        - name: menu_sliders_spiral_no5
+          url: sliders-spiral-no5
+        - name: menu_sliders_spiral_no10
+          url: sliders-spiral-no10
+#    - name: menu_sliders_bone
+#      url: sliders/bone
+    - name: menu_sliders_aluminium_nickel
+      url: sliders-metal-aluminium-nickel
       children:
-        - name: menu_drivers_aluminium-nickel_no5
-          url: drivers-metal-aluminium-nickel-no5
-#        - name: menu_drivers_aluminium-nickel_no8
-#          url: drivers-metal-aluminium-nickel-no8
-    - name: menu_drivers_gold
-      url: drivers-metal-gold
+        - name: menu_sliders_aluminium-nickel_no5
+          url: sliders-metal-aluminium-nickel-no5
+#        - name: menu_sliders_aluminium-nickel_no8
+#          url: sliders-metal-aluminium-nickel-no8
+    - name: menu_sliders_gold
+      url: sliders-metal-gold
       children:
-        - name: menu_drivers_gold_no5
-          url: drivers-metal-gold-no5
-    - name: menu_drivers_bronze
-      url: drivers-metal-bronze
+        - name: menu_sliders_gold_no5
+          url: sliders-metal-gold-no5
+    - name: menu_sliders_bronze
+      url: sliders-metal-bronze
       children:
-        - name: menu_drivers_bronze_no5
-          url: drivers-metal-bronze-no5
-#        - name: menu_drivers_bronze_no8
-#          url: drivers-metal-bronze-no8
-    - name: menu_drivers_black_nickel
-      url: drivers-metal-black-nickel
+        - name: menu_sliders_bronze_no5
+          url: sliders-metal-bronze-no5
+#        - name: menu_sliders_bronze_no8
+#          url: sliders-metal-bronze-no8
+    - name: menu_sliders_black_nickel
+      url: sliders-metal-black-nickel
       children:
-        - name: menu_drivers_black-nickel_no5
-          url: drivers-metal-black-nickel-no5
-#        - name: menu_drivers_black-nickel_no8
-#          url: drivers-black-nickel-no8
-#    - name: menu_drivers_puller
-#      url: drivers/puller
-    - name: menu_drivers_special
-      url: drivers-special-brand
+        - name: menu_sliders_black-nickel_no5
+          url: sliders-metal-black-nickel-no5
+#        - name: menu_sliders_black-nickel_no8
+#          url: sliders-black-nickel-no8
+#    - name: menu_sliders_puller
+#      url: sliders/puller
+    - name: menu_sliders_special
+      url: sliders-special-brand
 - name: menu_velcro
   url: velcro
 - name: menu_contact

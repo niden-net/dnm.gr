@@ -5,7 +5,7 @@
                     <div class="search-sidebar">
                         <ul class="search-category-list">
                             {% for menu in site.data.menu %}
-                            {% if menu.url == 'zippers' or menu.url == 'drivers' %}
+                            {% if menu.url == 'zippers' or menu.url == 'sliders' %}
                             {% assign numPosts = langPosts | where: "tags", menu.url %}
                             <li>
                                 <a href="/{{ page.language }}/{{ menu.url }}">

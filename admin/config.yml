@@ -261,84 +261,84 @@ collections:
             label: "Menu: ZIPPERS TAPES No10"
             widget: string
             i18n: true
-          - name: menu_drivers
-            label: "Menu: DRIVERS"
+          - name: menu_sliders
+            label: "Menu: SLIDERS"
             widget: string
             i18n: true
-          - name: menu_drivers_spiral
-            label: "Menu: DRIVERS SPIRAL"
+          - name: menu_sliders_spiral
+            label: "Menu: SLIDERS SPIRAL"
             widget: string
             i18n: true
-          - name: menu_drivers_spiral_no3
-            label: "Menu: DRIVERS SPIRAL No3"
+          - name: menu_sliders_spiral_no3
+            label: "Menu: SLIDERS SPIRAL No3"
             widget: string
             i18n: true
-          - name: menu_drivers_spiral_no4
-            label: "Menu: DRIVERS SPIRAL No4"
+          - name: menu_sliders_spiral_no4
+            label: "Menu: SLIDERS SPIRAL No4"
             widget: string
             i18n: true
-          - name: menu_drivers_spiral_no5
-            label: "Menu: DRIVERS SPIRAL No5"
+          - name: menu_sliders_spiral_no5
+            label: "Menu: SLIDERS SPIRAL No5"
             widget: string
             i18n: true
-          - name: menu_drivers_spiral_no10
-            label: "Menu: DRIVERS SPIRAL No10"
+          - name: menu_sliders_spiral_no10
+            label: "Menu: SLIDERS SPIRAL No10"
             widget: string
             i18n: true
-          - name: menu_drivers_bone
-            label: "Menu: DRIVERS BONE"
+          - name: menu_sliders_bone
+            label: "Menu: SLIDERS BONE"
             widget: string
             i18n: true
-          - name: menu_drivers_aluminium_nickel
-            label: "Menu: DRIVERS ALUMINIUM NICKEL"
+          - name: menu_sliders_aluminium_nickel
+            label: "Menu: SLIDERS ALUMINIUM NICKEL"
             widget: string
             i18n: true
-          - name: menu_drivers_aluminium-nickel_no5
-            label: "Menu: DRIVERS ALUMINIUM NICKEL No5"
+          - name: menu_sliders_aluminium-nickel_no5
+            label: "Menu: SLIDERS ALUMINIUM NICKEL No5"
             widget: string
             i18n: true
-          - name: menu_drivers_aluminium-nickel_no8
-            label: "Menu: DRIVERS ALUMINIUM NICKEL No8"
+          - name: menu_sliders_aluminium-nickel_no8
+            label: "Menu: SLIDERS ALUMINIUM NICKEL No8"
             widget: string
             i18n: true
-          - name: menu_drivers_gold
-            label: "Menu: DRIVERS GOLD"
+          - name: menu_sliders_gold
+            label: "Menu: SLIDERS GOLD"
             widget: string
             i18n: true
-          - name: menu_drivers_gold_no5
-            label: "Menu: DRIVERS GOLD No5"
+          - name: menu_sliders_gold_no5
+            label: "Menu: SLIDERS GOLD No5"
             widget: string
             i18n: true
-          - name: menu_drivers_bronze
-            label: "Menu: DRIVERS BRONZE"
+          - name: menu_sliders_bronze
+            label: "Menu: SLIDERS BRONZE"
             widget: string
             i18n: true
-          - name: menu_drivers_bronze_no5
-            label: "Menu: DRIVERS BRONZE No5"
+          - name: menu_sliders_bronze_no5
+            label: "Menu: SLIDERS BRONZE No5"
             widget: string
             i18n: true
-          - name: menu_drivers_bronze_no8
-            label: "Menu: DRIVERS BRONZE No8"
+          - name: menu_sliders_bronze_no8
+            label: "Menu: SLIDERS BRONZE No8"
             widget: string
             i18n: true
-          - name: menu_drivers_black_nickel
-            label: "Menu: DRIVERS BLACK NICKEL"
+          - name: menu_sliders_black_nickel
+            label: "Menu: SLIDERS BLACK NICKEL"
             widget: string
             i18n: true
-          - name: menu_drivers_black-nickel_no5
-            label: "Menu: DRIVERS BLACK NICKEL No5"
+          - name: menu_sliders_black-nickel_no5
+            label: "Menu: SLIDERS BLACK NICKEL No5"
             widget: string
             i18n: true
-          - name: menu_drivers_black-nickel_no8
-            label: "Menu: DRIVERS BLACK NICKEL No8"
+          - name: menu_sliders_black-nickel_no8
+            label: "Menu: SLIDERS BLACK NICKEL No8"
             widget: string
             i18n: true
-          - name: menu_drivers_puller
-            label: "Menu: DRIVERS PULLER"
+          - name: menu_sliders_puller
+            label: "Menu: SLIDERS PULLER"
             widget: string
             i18n: true
-          - name: menu_drivers_special
-            label: "Menu: DRIVERS SPECIAL"
+          - name: menu_sliders_special
+            label: "Menu: SLIDERS SPECIAL"
             widget: string
             i18n: true
           - name: menu_velcro
@@ -353,27 +353,27 @@ collections:
             label: "Categories"
             widget: string
             i18n: true
-          - name: drivers
+          - name: sliders
             label: "Drivers"
             widget: string
             i18n: true
-          - name: drivers-special-brand
+          - name: sliders-special-brand
             label: "Drivers Special"
             widget: string
             i18n: true
-          - name: drivers-spiral
+          - name: sliders-spiral
             label: "Drivers Spiral"
             widget: string
             i18n: true
-          - name: drivers-spiral-no5
+          - name: sliders-spiral-no5
             label: "Drivers Spiral No5"
             widget: string
             i18n: true
-          - name: drivers-spiral-no10
+          - name: sliders-spiral-no10
             label: "Drivers Spiral No10"
             widget: string
             i18n: true
-          - name: drivers-metal
+          - name: sliders-metal
             label: "Drivers Metal"
             widget: string
             i18n: true
@@ -381,35 +381,35 @@ collections:
             label: "Drivers Metal No5"
             widget: string
             i18n: true
-          - name: drivers-metal-aluminium-nickel
+          - name: sliders-metal-aluminium-nickel
             label: "Drivers Metal Aluminium Nickel"
             widget: string
             i18n: true
-          - name: drivers-metal-aluminium-nickel-no5
+          - name: sliders-metal-aluminium-nickel-no5
             label: "Drivers Metal Aluminium Nickel No5"
             widget: string
             i18n: true
-          - name: drivers-metal-black-nickel
+          - name: sliders-metal-black-nickel
             label: "Drivers Metal Black Nickel"
             widget: string
             i18n: true
-          - name: drivers-metal-black-nickel-no5
+          - name: sliders-metal-black-nickel-no5
             label: "Drivers Metal Black Nickel No5"
             widget: string
             i18n: true
-          - name: drivers-metal-gold
+          - name: sliders-metal-gold
             label: "Drivers Metal Gold"
             widget: string
             i18n: true
-          - name: drivers-metal-gold-no5
+          - name: sliders-metal-gold-no5
             label: "Drivers Metal Gold No5"
             widget: string
             i18n: true
-          - name: drivers-metal-bronze
+          - name: sliders-metal-bronze
             label: "Drivers Metal Bronze"
             widget: string
             i18n: true
-          - name: drivers-metal-bronze-no5
+          - name: sliders-metal-bronze-no5
             label: "Drivers Metal Bronze No5"
             widget: string
             i18n: true
