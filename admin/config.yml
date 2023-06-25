@@ -13,13 +13,50 @@ i18n:
   structure: multiple_files
 
   # Required - a list of locales to show in the editor UI
-  locales: [el, en]
+  locales: [en, el]
 
   # Optional, defaults to the first item in locales.
   # The locale to be used for fields validation and as a baseline for the entry.
-  default_locale: el
+  default_locale: en
 
 collections:
+  - name: "mix"
+    label: "Posts"
+    folder: "_posts"
+    create: true
+    i18n: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields for each document, usually in front matter
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "product"
+        i18n: duplicate
+      - label: "Language"
+        name: "language"
+        widget: "hidden"
+        default: "el"
+      - label: "Name"
+        name: "name"
+        widget: "string"
+        i18n: true
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+        i18n: true
+      - label: "Image"
+        name: "image_main"
+        widget: "image"
+        i18n: duplicate
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        i18n: duplicate
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        i18n: duplicate
+
   - name: "el"
     label: "Posts Greek"
     folder: "_posts/el"
@@ -33,6 +70,7 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Description", name: "description", widget: "markdown"}
+
   - name: "en"
     label: "Posts English"
     folder: "_posts/en"
@@ -46,6 +84,7 @@ collections:
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Description", name: "description", widget: "markdown"}
+
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
@@ -65,7 +104,7 @@ collections:
     delete: false # Prevent users from deleting documents in this collection
     i18n:
       structure: single_file
-      locales: [el, en]
+      locales: [en, el]
     editor:
       preview: false
     files:
@@ -527,7 +566,7 @@ collections:
 #    identifier_field: label
 #    i18n:
 #      structure: single_file
-#      locales: [el, en]
+#      locales: [en, el]
 #    files:
 #      - name: "translations"
 #        label: "Translations"
