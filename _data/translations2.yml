@@ -1,4 +1,4 @@
-strings:
+t:
   - name: title
     description: Home - DNM
   - name: description
