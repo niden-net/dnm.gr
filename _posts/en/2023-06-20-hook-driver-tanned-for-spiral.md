@@ -1,12 +1,12 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/hook-drivers-tanned-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/hook-sliders-tanned-for-spiral.webp
 language: en
-name: '"HOOK" DRIVER TANNED FOR SPIRAL'
-description: '"HOOK" DRIVER TANNED FOR SPIRAL'
+name: '"HOOK" SLIDER TANNED FOR SPIRAL'
+description: '"HOOK" SLIDER TANNED FOR SPIRAL'
 ---

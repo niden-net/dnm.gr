@@ -1,12 +1,12 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/dr4-drivers-gold-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/dr4-sliders-gold-for-spiral.webp
 language: en
-name: '"DR4" DRIVER GOLD FOR SPIRAL'
-description: '"DR4" DRIVER GOLD FOR SPIRAL'
+name: '"DR4" SLIDER GOLD FOR SPIRAL'
+description: '"DR4" SLIDER GOLD FOR SPIRAL'
 ---

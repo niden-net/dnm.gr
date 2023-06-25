@@ -1,9 +1,9 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-special-brand
+  - sliders
+  - sliders-special-brand
 image_main: /assets/img/n5-special-brand-8.webp
 language: en
 name: 'SPECIAL BRAND 08'

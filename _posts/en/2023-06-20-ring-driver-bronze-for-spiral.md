@@ -1,12 +1,12 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/ring-drivers-bronze-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/ring-sliders-bronze-for-spiral.webp
 language: en
-name: '"RING" DRIVER BRONZE FOR SPIRAL'
-description: '"RING" DRIVER BRONZE FOR SPIRAL'
+name: '"RING" SLIDER BRONZE FOR SPIRAL'
+description: '"RING" SLIDER BRONZE FOR SPIRAL'
 ---

@@ -1,12 +1,12 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/hook-drivers-gold-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/hook-sliders-gold-for-spiral.webp
 language: en
-name: '"HOOK" DRIVER GOLD FOR SPIRAL'
-description: '"HOOK" DRIVER GOLD FOR SPIRAL'
+name: '"HOOK" SLIDER GOLD FOR SPIRAL'
+description: '"HOOK" SLIDER GOLD FOR SPIRAL'
 ---

@@ -1,11 +1,11 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/r-drivers-bronze-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/r-sliders-bronze-for-spiral.webp
 language: el
 name: '"R" ΟΔΗΓΟΣ ΜΠΡΟΝΖΕ ΓΙΑ ΣΠΙΡΑΛ'
 description: '"R" ΟΔΗΓΟΣ ΜΠΡΟΝΖΕ ΓΙΑ ΣΠΙΡΑΛ'

@@ -1,10 +1,10 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no10
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no10
 image_main: /assets/img/n10-nylon-non-lock-white.webp
 language: en
 name: N10 NYLON NON LOCK WHITE

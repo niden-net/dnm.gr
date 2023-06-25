@@ -1,12 +1,12 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/sp-drivers-tanned-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/sp-sliders-tanned-for-spiral.webp
 language: en
-name: '"SP" DRIVER TANNED FOR SPIRAL'
-description: '"SP" DRIVER TANNED FOR SPIRAL'
+name: '"SP" SLIDER TANNED FOR SPIRAL'
+description: '"SP" SLIDER TANNED FOR SPIRAL'
 ---

@@ -1,12 +1,12 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/drop-drivers-tanned-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/drop-sliders-tanned-for-spiral.webp
 language: en
-name: '"DROP" DRIVER TANNED FOR SPIRAL'
-description: '"DROP" DRIVER TANNED FOR SPIRAL'
+name: '"DROP" SLIDER TANNED FOR SPIRAL'
+description: '"DROP" SLIDER TANNED FOR SPIRAL'
 ---

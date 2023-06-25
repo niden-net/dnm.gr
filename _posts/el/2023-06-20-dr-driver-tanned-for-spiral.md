@@ -1,11 +1,11 @@
 ---
 layout: product
-category: drivers
+category: sliders
 tags:
-  - drivers
-  - drivers-spiral
-  - drivers-spiral-no5
-image_main: /assets/img/dr-drivers-tanned-for-spiral.webp
+  - sliders
+  - sliders-spiral
+  - sliders-spiral-no5
+image_main: /assets/img/dr-sliders-tanned-for-spiral.webp
 language: el
 name: '"DR" ΟΔΗΓΟΣ ΜΑΥΡΙΣΜΕΝΟΣ ΓΙΑ ΣΠΙΡΑΛ'
 description: '"DR" ΟΔΗΓΟΣ ΜΑΥΡΙΣΜΕΝΟΣ ΓΙΑ ΣΠΙΡΑΛ'
