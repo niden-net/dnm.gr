@@ -64,7 +64,7 @@ layout: default
                                 <div class="item item-thumbnail">
                                     <a href="{{ product.url }}"
                                        class="item-image">
-                                        <img src="{{ product.image_main }}"
+                                        <img src="{{ product.image_main | replace: '.webp', '-95x100.webp' }}"
                                              alt="{{ product.name }}" />
                                     </a>
                                     <div class="item-info">
