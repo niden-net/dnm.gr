@@ -78,444 +78,446 @@ collections:
             label: "Title"
             widget: string
             i18n: true
-          - name: description
-            label: "Description"
-            widget: string
-            i18n: true
-          - name: email
-            label: "Email"
-            widget: string
-            i18n: true
-          - name: contact_description
-            label: "Contact: Description"
-            widget: string
-            i18n: true
-          - name: contact_form_name
-            label: "Contact: Name"
-            widget: string
-            i18n: true
-          - name: contact_form_email
-            label: "Contact: Email"
-            widget: string
-            i18n: true
-          - name: contact_form_subject
-            label: "Contact: Subject"
-            widget: string
-            i18n: true
-          - name: contact_form_message
-            label: "Contact: Message"
-            widget: string
-            i18n: true
-          - name: contact_form_send
-            label: "Contact: SEND MESSAGE"
-            widget: string
-            i18n: true
-          - name: contact_thank_you
-            label: "Contact: Thank you message"
-            widget: string
-            i18n: true
-          - name: contact_error
-            label: "Contact: Error message"
-            widget: string
-            i18n: true
-          - name: contact_error_fill_fields
-            label: "Contact: Fill all fields"
-            widget: string
-            i18n: true
-          - name: contact_address_street
-            label: "Contact: Address Street"
-            widget: string
-            i18n: true
-          - name: contact_address_zip
-            label: "Contact: Address Zip"
-            widget: string
-            i18n: true
-          - name: contact_address_city
-            label: "Contact: Address City"
-            widget: string
-            i18n: true
-          - name: contact_address_country
-            label: "Contact: Address Country"
-            widget: string
-            i18n: true
-          - name: contact_phone
-            label: "Contact: Phone"
-            widget: string
-            i18n: true
-          - name: contact_fax
-            label: "Contact: Fax"
-            widget: string
-            i18n: true
-          - name: contact_email
-            label: "Contact: Email"
-            widget: string
-            i18n: true
-          - name: copyright
-            label: "Copyright Message"
-            widget: string
-            i18n: true
-          - name: content_index_1
-            label: "Index: Line 1"
-            widget: string
-            i18n: true
-          - name: content_index_2
-            label: "Index: Line 2"
-            widget: string
-            i18n: true
-          - name: content_index_3
-            label: "Index: Line 3"
-            widget: string
-            i18n: true
-          - name: menu_homepage
-            label: "Menu: HOME"
-            widget: string
-            i18n: true
-          - name: menu_zippers
-            label: "Menu: ZIPPERS"
-            widget: string
-            i18n: true
-          - name: menu_zippers_nylon
-            label: "Menu: ZIPPERS NYLON"
-            widget: string
-            i18n: true
-          - name: menu_zippers_nylon_no3
-            label: "Menu: ZIPPERS NYLON No3"
-            widget: string
-            i18n: true
-          - name: menu_zippers_nylon_no5
-            label: "Menu: ZIPPERS NYLON No5"
-            widget: string
-            i18n: true
-          - name: menu_zippers_nylon_no10
-            label: "Menu: ZIPPERS NYLON No10"
-            widget: string
-            i18n: true
-          - name: menu_zippers_bone
-            label: "Menu: ZIPPERS BONE"
-            widget: string
-            i18n: true
-          - name: menu_zippers_bone_no3
-            label: "Menu: ZIPPERS BONE No3"
-            widget: string
-            i18n: true
-          - name: menu_zippers_bone_no5
-            label: "Menu: ZIPPERS BONE No5"
-            widget: string
-            i18n: true
-          - name: menu_zippers_bone_no8
-            label: "Menu: ZIPPERS BONE No8"
-            widget: string
-            i18n: true
-          - name: menu_zippers_metal
-            label: "Menu: ZIPPERS METAL"
-            widget: string
-            i18n: true
-          - name: menu_zippers_metal_gold
-            label: "Menu: ZIPPERS METAL GOLD"
-            widget: string
-            i18n: true
-          - name: menu_zippers_metal_black_nickel
-            label: "Menu: ZIPPERS METAL BLACK NICKEL"
-            widget: string
-            i18n: true
-          - name: menu_zippers_metal_aluminium_nickel
-            label: "Menu: ZIPPERS METAL ALUMINIUM NICKEL"
-            widget: string
-            i18n: true
-          - name: menu_zippers_metal_bronze
-            label: "Menu: ZIPPERS BRONZE"
-            widget: string
-            i18n: true
-          - name: menu_zippers_special
-            label: "Menu: ZIPPERS SPECIAL"
-            widget: string
-            i18n: true
-          - name: menu_zippers_special_spiral
-            label: "Menu: ZIPPERS SPECIAL SPIRAL"
-            widget: string
-            i18n: true
-          - name: menu_zippers_special_bone
-            label: "Menu: ZIPPERS SPECIAL BONE"
-            widget: string
-            i18n: true
-          - name: menu_zippers_special_metal
-            label: "Menu: ZIPPERS SPECIAL METAL"
-            widget: string
-            i18n: true
-          - name: menu_zippers_tape
-            label: "Menu: ZIPPERS TAPES"
-            widget: string
-            i18n: true
-          - name: menu_zippers_tape_no3
-            label: "Menu: ZIPPERS TAPES No3"
-            widget: string
-            i18n: true
-          - name: menu_zippers_tape_no5
-            label: "Menu: ZIPPERS TAPES No5"
-            widget: string
-            i18n: true
-          - name: menu_zippers_tape_no10
-            label: "Menu: ZIPPERS TAPES No10"
-            widget: string
-            i18n: true
-          - name: menu_drivers
-            label: "Menu: DRIVERS"
-            widget: string
-            i18n: true
-          - name: menu_drivers_spiral
-            label: "Menu: DRIVERS SPIRAL"
-            widget: string
-            i18n: true
-          - name: menu_drivers_spiral_no3
-            label: "Menu: DRIVERS SPIRAL No3"
-            widget: string
-            i18n: true
-          - name: menu_drivers_spiral_no4
-            label: "Menu: DRIVERS SPIRAL No4"
-            widget: string
-            i18n: true
-          - name: menu_drivers_spiral_no5
-            label: "Menu: DRIVERS SPIRAL No5"
-            widget: string
-            i18n: true
-          - name: menu_drivers_spiral_no10
-            label: "Menu: DRIVERS SPIRAL No10"
-            widget: string
-            i18n: true
-          - name: menu_drivers_bone
-            label: "Menu: DRIVERS BONE"
-            widget: string
-            i18n: true
-          - name: menu_drivers_aluminium_nickel
-            label: "Menu: DRIVERS ALUMINIUM NICKEL"
-            widget: string
-            i18n: true
-          - name: menu_drivers_aluminium-nickel_no5
-            label: "Menu: DRIVERS ALUMINIUM NICKEL No5"
-            widget: string
-            i18n: true
-          - name: menu_drivers_aluminium-nickel_no8
-            label: "Menu: DRIVERS ALUMINIUM NICKEL No8"
-            widget: string
-            i18n: true
-          - name: menu_drivers_gold
-            label: "Menu: DRIVERS GOLD"
-            widget: string
-            i18n: true
-          - name: menu_drivers_gold_no5
-            label: "Menu: DRIVERS GOLD No5"
-            widget: string
-            i18n: true
-          - name: menu_drivers_bronze
-            label: "Menu: DRIVERS BRONZE"
-            widget: string
-            i18n: true
-          - name: menu_drivers_bronze_no5
-            label: "Menu: DRIVERS BRONZE No5"
-            widget: string
-            i18n: true
-          - name: menu_drivers_bronze_no8
-            label: "Menu: DRIVERS BRONZE No8"
-            widget: string
-            i18n: true
-          - name: menu_drivers_black_nickel
-            label: "Menu: DRIVERS BLACK NICKEL"
-            widget: string
-            i18n: true
-          - name: menu_drivers_black-nickel_no5
-            label: "Menu: DRIVERS BLACK NICKEL No5"
-            widget: string
-            i18n: true
-          - name: menu_drivers_black-nickel_no8
-            label: "Menu: DRIVERS BLACK NICKEL No8"
-            widget: string
-            i18n: true
-          - name: menu_drivers_puller
-            label: "Menu: DRIVERS PULLER"
-            widget: string
-            i18n: true
-          - name: menu_drivers_special
-            label: "Menu: DRIVERS SPECIAL"
-            widget: string
-            i18n: true
-          - name: menu_velcro
-            label: "Menu: VELCRO"
-            widget: string
-            i18n: true
-          - name: menu_contact
-            label: "Menu: CONTACT"
-            widget: string
-            i18n: true
-          - name: categories
-            label: "Categories"
-            widget: string
-            i18n: true
-          - name: drivers
-            label: "Drivers"
-            widget: string
-            i18n: true
-          - name: drivers-special-brand
-            label: "Drivers Special"
-            widget: string
-            i18n: true
-          - name: drivers-spiral
-            label: "Drivers Spiral"
-            widget: string
-            i18n: true
-          - name: drivers-spiral-no5
-            label: "Drivers Spiral No5"
-            widget: string
-            i18n: true
-          - name: drivers-spiral-no10
-            label: "Drivers Spiral No10"
-            widget: string
-            i18n: true
-          - name: drivers-metal
-            label: "Drivers Metal"
-            widget: string
-            i18n: true
-          - name: zippers-metal-no5
-            label: "Drivers Metal No5"
-            widget: string
-            i18n: true
-          - name: drivers-metal-aluminium-nickel
-            label: "Drivers Metal Aluminium Nickel"
-            widget: string
-            i18n: true
-          - name: drivers-metal-aluminium-nickel-no5
-            label: "Drivers Metal Aluminium Nickel No5"
-            widget: string
-            i18n: true
-          - name: drivers-metal-black-nickel
-            label: "Drivers Metal Black Nickel"
-            widget: string
-            i18n: true
-          - name: drivers-metal-black-nickel-no5
-            label: "Drivers Metal Black Nickel No5"
-            widget: string
-            i18n: true
-          - name: drivers-metal-gold
-            label: "Drivers Metal Gold"
-            widget: string
-            i18n: true
-          - name: drivers-metal-gold-no5
-            label: "Drivers Metal Gold No5"
-            widget: string
-            i18n: true
-          - name: drivers-metal-bronze
-            label: "Drivers Metal Bronze"
-            widget: string
-            i18n: true
-          - name: drivers-metal-bronze-no5
-            label: "Drivers Metal Bronze No5"
-            widget: string
-            i18n: true
-          - name: zippers
-            label: "Zippers"
-            widget: string
-            i18n: true
-          - name: zippers-nylon
-            label: "Zippers Nylon"
-            widget: string
-            i18n: true
-          - name: zippers-nylon-no3
-            label: "Zippers Nylon No3"
-            widget: string
-            i18n: true
-          - name: zippers-nylon-no5
-            label: "Zippers Nylon No5"
-            widget: string
-            i18n: true
-          - name: zippers-bone
-            label: "Zippers Bone"
-            widget: string
-            i18n: true
-          - name: zippers-bone-no3
-            label: "Zippers Bone No3"
-            widget: string
-            i18n: true
-          - name: zippers-bone-no5
-            label: "Zippers Bone No5"
-            widget: string
-            i18n: true
-          - name: zippers-bone-no8
-            label: "Zippers Bone No8"
-            widget: string
-            i18n: true
-          - name: zippers-metal
-            label: "Zippers Metal"
-            widget: string
-            i18n: true
-          - name: zippers-metal-gold
-            label: "Zippers Metal Gold"
-            widget: string
-            i18n: true
-          - name: zippers-metal-gold-no5
-            label: "Zippers Metal Gold No5"
-            widget: string
-            i18n: true
-          - name: zippers-metal-aluminium-nickel
-            label: "Zippers Metal Aluminium Nickel"
-            widget: string
-            i18n: true
-          - name: zippers-metal-aluminium-nickel-no5
-            label: "Zippers Metal Aluminium Nickel No5"
-            widget: string
-            i18n: true
-          - name: zippers-metal-black-nickel
-            label: "Zippers Metal Black Nickel"
-            widget: string
-            i18n: true
-          - name: zippers-metal-black-nickel-no5
-            label: "Zippers Metal Black Nickel No5"
-            widget: string
-            i18n: true
-          - name: zippers-metal-bronze
-            label: "Zippers Metal Bronze"
-            widget: string
-            i18n: true
-          - name: zippers-metal-bronze-no5
-            label: "Zippers Metal Bronze No5"
-            widget: string
-            i18n: true
-          - name: zippers-special
-            label: "Zippers Special"
-            widget: string
-            i18n: true
-          - name: zippers-special-spiral
-            label: "Zippers Special Spiral"
-            widget: string
-            i18n: true
-          - name: zippers-special-bone
-            label: "Zippers Special Bone"
-            widget: string
-            i18n: true
-          - name: zippers-special-bone-no5
-            label: "Zippers Special Bone No5"
-            widget: string
-            i18n: true
-          - name: zippers-special-bone-no8
-            label: "Zippers Special Bone No8"
-            widget: string
-            i18n: true
-          - name: zippers-special-metal
-            label: "Zippers Special Metal"
-            widget: string
-            i18n: true
-          - name: zippers-tape
-            label: "Zippers Tape"
-            widget: string
-            i18n: true
-          - name: zippers-tape-bone
-            label: "Zippers Tape Bone"
-            widget: string
-            i18n: true
-          - name: zippers-tape-no5
-            label: "Zippers Tape Bone No5"
-            widget: string
-            i18n: true
-          - name: products, name
-            label: "products"
+#          - name: description
+#            label: "Description"
+#            widget: string
+#            i18n: true
+#          - name: email
+#            label: "Email"
+#            widget: string
+#            i18n: true
+#          - name: contact_description
+#            label: "Contact: Description"
+#            widget: string
+#            i18n: true
+#          - name: contact_form_name
+#            label: "Contact: Name"
+#            widget: string
+#            i18n: true
+#          - name: contact_form_email
+#            label: "Contact: Email"
+#            widget: string
+#            i18n: true
+#          - name: contact_form_subject
+#            label: "Contact: Subject"
+#            widget: string
+#            i18n: true
+#          - name: contact_form_message
+#            label: "Contact: Message"
+#            widget: string
+#            i18n: true
+#          - name: contact_form_send
+#            label: "Contact: SEND MESSAGE"
+#            widget: string
+#            i18n: true
+#          - name: contact_thank_you
+#            label: "Contact: Thank you message"
+#            widget: string
+#            i18n: true
+#          - name: contact_error
+#            label: "Contact: Error message"
+#            widget: string
+#            i18n: true
+#          - name: contact_error_fill_fields
+#            label: "Contact: Fill all fields"
+#            widget: string
+#            i18n: true
+#          - name: contact_address_street
+#            label: "Contact: Address Street"
+#            widget: string
+#            i18n: true
+#          - name: contact_address_zip
+#            label: "Contact: Address Zip"
+#            widget: string
+#            i18n: true
+#          - name: contact_address_city
+#            label: "Contact: Address City"
+#            widget: string
+#            i18n: true
+#          - name: contact_address_country
+#            label: "Contact: Address Country"
+#            widget: string
+#            i18n: true
+#          - name: contact_phone
+#            label: "Contact: Phone"
+#            widget: string
+#            i18n: true
+#          - name: contact_fax
+#            label: "Contact: Fax"
+#            widget: string
+#            i18n: true
+#          - name: contact_email
+#            label: "Contact: Email"
+#            widget: string
+#            i18n: true
+#          - name: copyright
+#            label: "Copyright Message"
+#            widget: string
+#            i18n: true
+#          - name: content_index_1
+#            label: "Index: Line 1"
+#            widget: string
+#            i18n: true
+#          - name: content_index_2
+#            label: "Index: Line 2"
+#            widget: string
+#            i18n: true
+#          - name: content_index_3
+#            label: "Index: Line 3"
+#            widget: string
+#            i18n: true
+#          - name: menu_homepage
+#            label: "Menu: HOME"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers
+#            label: "Menu: ZIPPERS"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_nylon
+#            label: "Menu: ZIPPERS NYLON"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_nylon_no3
+#            label: "Menu: ZIPPERS NYLON No3"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_nylon_no5
+#            label: "Menu: ZIPPERS NYLON No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_nylon_no10
+#            label: "Menu: ZIPPERS NYLON No10"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_bone
+#            label: "Menu: ZIPPERS BONE"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_bone_no3
+#            label: "Menu: ZIPPERS BONE No3"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_bone_no5
+#            label: "Menu: ZIPPERS BONE No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_bone_no8
+#            label: "Menu: ZIPPERS BONE No8"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_metal
+#            label: "Menu: ZIPPERS METAL"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_metal_gold
+#            label: "Menu: ZIPPERS METAL GOLD"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_metal_black_nickel
+#            label: "Menu: ZIPPERS METAL BLACK NICKEL"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_metal_aluminium_nickel
+#            label: "Menu: ZIPPERS METAL ALUMINIUM NICKEL"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_metal_bronze
+#            label: "Menu: ZIPPERS BRONZE"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_special
+#            label: "Menu: ZIPPERS SPECIAL"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_special_spiral
+#            label: "Menu: ZIPPERS SPECIAL SPIRAL"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_special_bone
+#            label: "Menu: ZIPPERS SPECIAL BONE"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_special_metal
+#            label: "Menu: ZIPPERS SPECIAL METAL"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_tape
+#            label: "Menu: ZIPPERS TAPES"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_tape_no3
+#            label: "Menu: ZIPPERS TAPES No3"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_tape_no5
+#            label: "Menu: ZIPPERS TAPES No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_zippers_tape_no10
+#            label: "Menu: ZIPPERS TAPES No10"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers
+#            label: "Menu: DRIVERS"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_spiral
+#            label: "Menu: DRIVERS SPIRAL"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_spiral_no3
+#            label: "Menu: DRIVERS SPIRAL No3"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_spiral_no4
+#            label: "Menu: DRIVERS SPIRAL No4"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_spiral_no5
+#            label: "Menu: DRIVERS SPIRAL No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_spiral_no10
+#            label: "Menu: DRIVERS SPIRAL No10"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_bone
+#            label: "Menu: DRIVERS BONE"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_aluminium_nickel
+#            label: "Menu: DRIVERS ALUMINIUM NICKEL"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_aluminium-nickel_no5
+#            label: "Menu: DRIVERS ALUMINIUM NICKEL No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_aluminium-nickel_no8
+#            label: "Menu: DRIVERS ALUMINIUM NICKEL No8"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_gold
+#            label: "Menu: DRIVERS GOLD"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_gold_no5
+#            label: "Menu: DRIVERS GOLD No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_bronze
+#            label: "Menu: DRIVERS BRONZE"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_bronze_no5
+#            label: "Menu: DRIVERS BRONZE No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_bronze_no8
+#            label: "Menu: DRIVERS BRONZE No8"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_black_nickel
+#            label: "Menu: DRIVERS BLACK NICKEL"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_black-nickel_no5
+#            label: "Menu: DRIVERS BLACK NICKEL No5"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_black-nickel_no8
+#            label: "Menu: DRIVERS BLACK NICKEL No8"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_puller
+#            label: "Menu: DRIVERS PULLER"
+#            widget: string
+#            i18n: true
+#          - name: menu_drivers_special
+#            label: "Menu: DRIVERS SPECIAL"
+#            widget: string
+#            i18n: true
+#          - name: menu_velcro
+#            label: "Menu: VELCRO"
+#            widget: string
+#            i18n: true
+#          - name: menu_contact
+#            label: "Menu: CONTACT"
+#            widget: string
+#            i18n: true
+#          - name: categories
+#            label: "Categories"
+#            widget: string
+#            i18n: true
+#          - name: drivers
+#            label: "Drivers"
+#            widget: string
+#            i18n: true
+#          - name: drivers-special-brand
+#            label: "Drivers Special"
+#            widget: string
+#            i18n: true
+#          - name: drivers-spiral
+#            label: "Drivers Spiral"
+#            widget: string
+#            i18n: true
+#          - name: drivers-spiral-no5
+#            label: "Drivers Spiral No5"
+#            widget: string
+#            i18n: true
+#          - name: drivers-spiral-no10
+#            label: "Drivers Spiral No10"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal
+#            label: "Drivers Metal"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-no5
+#            label: "Drivers Metal No5"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-aluminium-nickel
+#            label: "Drivers Metal Aluminium Nickel"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-aluminium-nickel-no5
+#            label: "Drivers Metal Aluminium Nickel No5"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-black-nickel
+#            label: "Drivers Metal Black Nickel"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-black-nickel-no5
+#            label: "Drivers Metal Black Nickel No5"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-gold
+#            label: "Drivers Metal Gold"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-gold-no5
+#            label: "Drivers Metal Gold No5"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-bronze
+#            label: "Drivers Metal Bronze"
+#            widget: string
+#            i18n: true
+#          - name: drivers-metal-bronze-no5
+#            label: "Drivers Metal Bronze No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers
+#            label: "Zippers"
+#            widget: string
+#            i18n: true
+#          - name: zippers-nylon
+#            label: "Zippers Nylon"
+#            widget: string
+#            i18n: true
+#          - name: zippers-nylon-no3
+#            label: "Zippers Nylon No3"
+#            widget: string
+#            i18n: true
+#          - name: zippers-nylon-no5
+#            label: "Zippers Nylon No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-bone
+#            label: "Zippers Bone"
+#            widget: string
+#            i18n: true
+#          - name: zippers-bone-no3
+#            label: "Zippers Bone No3"
+#            widget: string
+#            i18n: true
+#          - name: zippers-bone-no5
+#            label: "Zippers Bone No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-bone-no8
+#            label: "Zippers Bone No8"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal
+#            label: "Zippers Metal"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-gold
+#            label: "Zippers Metal Gold"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-gold-no5
+#            label: "Zippers Metal Gold No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-aluminium-nickel
+#            label: "Zippers Metal Aluminium Nickel"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-aluminium-nickel-no5
+#            label: "Zippers Metal Aluminium Nickel No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-black-nickel
+#            label: "Zippers Metal Black Nickel"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-black-nickel-no5
+#            label: "Zippers Metal Black Nickel No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-bronze
+#            label: "Zippers Metal Bronze"
+#            widget: string
+#            i18n: true
+#          - name: zippers-metal-bronze-no5
+#            label: "Zippers Metal Bronze No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-special
+#            label: "Zippers Special"
+#            widget: string
+#            i18n: true
+#          - name: zippers-special-spiral
+#            label: "Zippers Special Spiral"
+#            widget: string
+#            i18n: true
+#          - name: zippers-special-bone
+#            label: "Zippers Special Bone"
+#            widget: string
+#            i18n: true
+#          - name: zippers-special-bone-no5
+#            label: "Zippers Special Bone No5"
+#            widget: string
+#            i18n: true
+#          - name: zippers-special-bone-no8
+#            label: "Zippers Special Bone No8"
+#            widget: string
+#            i18n: true
+#          - name: zippers-special-metal
+#            label: "Zippers Special Metal"
+#            widget: string
+#            i18n: true
+#          - name: zippers-tape
+#            label: "Zippers Tape"
+#            widget: string
+#            i18n: true
+#          - name: zippers-tape-bone
+#            label: "Zippers Tape Bone"
+#            widget: string
+#            i18n: true
+#          - name: zippers-tape-no5
+#            label: "Zippers Tape Bone No5"
+#            widget: string
+#            i18n: true
+#          - name: products
+#            label: "products"
+#            widget: string
+#            i18n: true
 
 
 
