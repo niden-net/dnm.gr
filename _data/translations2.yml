@@ -1,0 +1,11 @@
+strings:
+  - name: title
+    description: Home - DNM
+  - name: description
+    description: DNM Company was founded in 1986 by Dimitrios Papagiannis. Very soon
+      it took over a major role in the market, since it stood out for its
+      construction quality and its friendly approach against customers and
+      suppliers. The evolution, innovation and inexhaustible passion made DNM
+      one of the most reliable companies in its field.[...]
+  - name: email
+    description: info@dnm.gr
