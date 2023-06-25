@@ -22,6 +22,7 @@ layout: default
                                            class="btn btn-warning btn-sm">
                                             {{ site.data.translations[page.language][tag] }}
                                         </a>
+                                        {% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}
                                         {% endfor %}
                                     </h4>
                                 </div>
