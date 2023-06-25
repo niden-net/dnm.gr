@@ -73,6 +73,7 @@ collections:
         label: 'Translation Strings'
         file: '_data/translations2.yml'
         description: 'Translation Strings'
+        i18n: true
         fields:
           - name: title
             label: "Title"
