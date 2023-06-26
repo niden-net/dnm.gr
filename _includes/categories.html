@@ -2,7 +2,12 @@
 {% assign sideCategories = site.categories | sort %}
 
                     <!-- BEGIN search-sidebar -->
-                    <div class="search-sidebar">
+                    <button type="button" class="d-lg-none search-nav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="search-sidebar offcanvas-lg offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                         <ul class="search-category-list">
                             {% for menu in site.data.menu %}
                             {% if menu.url == 'zippers' or menu.url == 'sliders' %}
