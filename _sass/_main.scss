@@ -186,6 +186,10 @@ main {
   &:hover {
     color: #030303 !important;
   }
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .search-category-list ul {
