@@ -13,7 +13,7 @@
         }
     }($bs.Dropdown.prototype.toggle);
 
-    document.querySelectorAll('.dropdown').forEach(function(dd) {
+    document.querySelectorAll('.header-nav .dropdown').forEach(function(dd) {
         dd.addEventListener('hide.bs.dropdown', function(e) {
             if (this.classList.contains(CLASS_NAME)) {
                 this.classList.remove(CLASS_NAME);

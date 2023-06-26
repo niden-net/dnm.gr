@@ -22,7 +22,7 @@ layout: default
                                            class="badge bg-warning">
                                             {{ site.data.translations[page.language][tag] }}
                                         </a>
-                                        {% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}
+                                        {% unless forloop.last %}<i class="fa fa-fw fa-angle-right text-muted"></i>{% endunless %}
                                         {% endfor %}
                                     </h4>
                                 </div>
